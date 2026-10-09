@@ -71,6 +71,6 @@ for(const x of [0,7,"007","12A"])assert.equal(a.routeStop(x),String(x));assert.e
  a.setData([]);let config,tiles,mask;
  const raster={setView(){return this},on(){return this},getBounds:()=>view,getZoom:()=>14};
  ctx.window.L=ctx.L;ctx.L.map=(id,opts)=>{config=opts;return raster};ctx.L.tileLayer=(url,opts)=>{tiles=opts;return {addTo(){}}};ctx.L.polygon=(rings,opts)=>{mask={rings,opts};return {addTo(){}}};a.rasterMap();
- assert.equal(config.minZoom,13);assert.equal(config.zoomSnap,.25);assert.equal(config.inertiaDeceleration,1200);assert.equal(tiles.maxNativeZoom,18);assert.equal(tiles.keepBuffer,1);assert.equal(tiles.noWrap,true);assert.deepEqual(JSON.parse(JSON.stringify(tiles.bounds)),[[-2.511,-44.32],[-2.485,-44.278]]);assert.equal(mask.rings[1].length,9);assert.equal(mask.opts.interactive,false);
- assert(html.includes('.pin{width:19px!important'));console.log('PASS: recorte, máscara, zoom suave e marcadores fora da tela sem alterar entregas.');
+ assert.equal(config.minZoom,12);assert.equal(config.zoomSnap,.25);assert.equal(config.inertiaDeceleration,1200);assert.equal(tiles.maxNativeZoom,18);assert.equal(tiles.keepBuffer,1);assert.equal(tiles.noWrap,true);assert.deepEqual(JSON.parse(JSON.stringify(tiles.bounds)),[[-2.531,-44.34],[-2.465,-44.258]]);assert.equal(mask,undefined);assert.equal(config.maxBoundsViscosity,.4);
+ assert(html.includes('.pin{width:19px!important'));console.log('PASS: área visual ampliada sem máscara, zoom suave e marcadores fora da tela sem alterar entregas.');
 })().catch(e=>{console.error(e);process.exitCode=1});
