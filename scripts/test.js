@@ -27,3 +27,7 @@ const joana={address:'Joanalice, Rua dos Curiós, 5',source:'shopee'};assert.equ
 console.log('PASS: área restrita, homônimos fora do recorte, centro de rua recusado e marcadores espaçados.');
 
 console.log('COBERTURA NA ÁREA:',a.BUILDING_DB.filter(b=>a.inRegion(b)).length);
+
+const vinhais={address:'Edifício Belvedere, Rua Miquerinos, 1, Vinhais',source:'shopee'};assert.equal(a.applyPermanentCatalog([vinhais]),0);console.log('PASS: bairro fora da área também detectado no endereço completo.');
+
+for(const address of ['Joanalice Centro de Beleza, Rua dos Curiós, 5','Condomínio Morada de Avalon, Rua Jaracati, 6'])assert.equal(a.applyPermanentCatalog([{address,source:'shopee'}]),1);

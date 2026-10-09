@@ -37,7 +37,7 @@ function toast(msg){$('toast').textContent=msg;$('toast').classList.add('on');cl
 const SERVICE_AREA=[[-44.320,-2.506],[-44.309,-2.506],[-44.303,-2.511],[-44.293,-2.511],[-44.283,-2.5077],[-44.278,-2.498],[-44.278,-2.485],[-44.307,-2.485],[-44.320,-2.495]];
 function inRegion(p){if(!p||p.lat==null||p.lng==null||!Number.isFinite(+p.lat)||!Number.isFinite(+p.lng))return false;const x=+p.lng,y=+p.lat;let inside=false;for(let i=0,j=SERVICE_AREA.length-1;i<SERVICE_AREA.length;j=i++){const [xi,yi]=SERVICE_AREA[i],[xj,yj]=SERVICE_AREA[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)inside=!inside}return inside}
 function valid(p){return inRegion(p)}
-function outsideDistrict(p){return /\b(vinhais|cohama|cohafuma|turu|angelim|olho d agua|olho dagua|barramar|ipase|jaracaty|jaracati|centro|cohab|cohaserma)\b/.test(norm(p.district))}
+function outsideDistrict(p){return /\b(vinhais|cohama|cohafuma|turu|angelim|olho d agua|olho dagua|barramar|ipase|jaracaty|jaracati|centro|cohab|cohaserma)\b/.test(norm(p.district||''))}
 function pruneOutOfScope(rows){for(const r of rows)if(!inRegion(r)){r.lat=null;r.lng=null;r.quality='Fora da área atendida ou localização pendente'}}
 
 function locationParts(d){
@@ -49,8 +49,8 @@ function locationParts(d){
  building=building.replace(/\b\d+\s*(?:andar|apto|apt|ap)\b.*$/i,'').trim().replace(/\.$/,'');
  if(!building){const full=' '+norm(s)+' ';const hit=BUILDING_DB.find(b=>[b.nome,...(b.aliases||[])].some(n=>{n=nbuilding(n);return n.length>=5&&full.includes(' '+n+' ')}));if(hit)building=hit.nome}
  const quadra=(s.match(/\b(?:quadra|qd\.?|qdra|qdr\.?)\s*([a-z0-9]+)/i)||[])[1]||'';
- let district=String(d.bairro||'');if(/jardim\s+renascen/i.test(s))district='Jardim Renascença';else if(/calhau/i.test(s))district='Calhau';
- return {street,roadKey:nstr(street),number,building,buildingKey:nbuilding(building),quadra,district};
+ let district=String(d.bairro||'');const districtMatch=s.split(/[,;]/).map(norm).join(';').match(/(?:^|;)\s*(?:bairro\s+)?(vinhais|cohama|cohafuma|turu|angelim|olho d agua|olho dagua|barramar|ipase|jaracaty|jaracati|centro|cohab|cohaserma|calhau)\s*(?=$|,|;|sao luis|ma\b)/);if(districtMatch)district=districtMatch[1];else if(/jardim\s+renascen/i.test(s))district='Jardim Renascença';
+ return {street,roadKey:nstr(street),number,building,buildingKey:nbuilding(building),quadra,district,originalAddress:s};
 }
 // Cadastro permanente de locais com evidência e precisão explícitas.
 function catalogMatches(p){
