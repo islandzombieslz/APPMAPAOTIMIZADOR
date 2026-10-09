@@ -790,15 +790,31 @@
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-038",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.496086,
+    "lng": -44.284537,
+    "geo_status": "mapeado",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
     "geo_original_address": "Rua Vale  Jardim Renascença",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Coordenada do endereço censitário; portaria não verificada",
+    "aliases": [],
+    "geo_name": "Montparnas",
+    "geo_address": "Avenida Vale, 6, Renascença 2",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "89536886",
+        "89536888",
+        "89536890"
+      ],
+      "rows": 37,
+      "name_match": true,
+      "census_year": 2022,
+      "nv_geo": {
+        "1": 6,
+        "2": 31
+      }
+    }
   },
   {
     "nome": "Condomínio Reserva Lagoa",
@@ -2180,15 +2196,16 @@
     "tipo": "residencial",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-106",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.4916302,
+    "lng": -44.2921634,
+    "geo_status": "empreendimento",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "Apto / empreendimento identificado por nome",
+    "geo_ref": "https://apto.vc/br/ma/sao-luis/jardim-renascenca/entre-rios",
     "geo_original_address": "Rua Mearim quadra I, lote 06 Jardim Renascença",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Ponto publicado na lista de empreendimentos; portaria ativa não verificada",
+    "aliases": [],
+    "geo_name": "Giardino Residenza"
   },
   {
     "nome": "Condomínio Bahrein",
@@ -2614,15 +2631,16 @@
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-126",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.5016005,
+    "lng": -44.2865803,
+    "geo_status": "empreendimento",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "Apto / empreendimento identificado por nome",
+    "geo_ref": "https://apto.vc/br/ma/sao-luis/jardim-renascenca/entre-rios",
     "geo_original_address": "Renascença II",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Ponto publicado na lista de empreendimentos; portaria ativa não verificada",
+    "aliases": [],
+    "geo_name": "Edifício Dom Ricardo"
   },
   {
     "nome": "Condomínio Pelion",

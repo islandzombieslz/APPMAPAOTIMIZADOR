@@ -4,7 +4,7 @@ Aplicativo para importar uma planilha de entregas e reconhecer os prédios usand
 
 ## Cobertura atual
 
-O cadastro contém **186 registros, 111 com coordenadas e 75 pendentes**. A pesquisa ainda não resolveu todos os endereços. Pontos identificam o prédio, a área mapeada ou o endereço censitário; a portaria não foi verificada. Não são 186 localizações confirmadas.
+O cadastro contém **186 registros, 114 com coordenadas e 72 pendentes**. A pesquisa ainda não resolveu todos os endereços. Pontos identificam o prédio, a área mapeada ou o endereço censitário; a portaria não foi verificada. Não são 186 localizações confirmadas.
 
 Cada registro em `data/buildings.json` inclui fonte, referência, precisão e, quando disponível, evidências do CNEFE. Há endereços antigos divergentes e nomes repetidos: os registros são identificados por um ID próprio, para evitar compartilhar coordenadas entre prédios diferentes.
 

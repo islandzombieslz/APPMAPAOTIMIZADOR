@@ -4,7 +4,7 @@ const source=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
 const els=new Map(),storage=new Map();const element=()=>({style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},appendChild(){},insertAdjacentHTML(){},value:''});
 const ctx={console,setTimeout(){},clearTimeout(){},window:{addEventListener(){}},navigator:{},document:{getElementById(id){if(!els.has(id))els.set(id,element());return els.get(id)},createElement:element},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},AbortController,URL,Blob,confirm:()=>true};
 vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,locationParts,permanentCoordinate,applyPermanentCatalog,groups,setData:x=>data=x};`,ctx);
-const a=ctx.api;assert.equal(a.BUILDING_DB.length,186);assert.equal(Object.keys(a.GEO_SEED).length,111);
+const a=ctx.api;assert.equal(a.BUILDING_DB.length,186);assert.equal(Object.keys(a.GEO_SEED).length,114);
 const executive=a.BUILDING_DB.find(b=>b.nome==='Executive Center'||b.nome==='Edifício Executive Center');assert(executive);
 const row={address:executive.logradouro+', '+executive.numero+', Edifício Executive Center, apto 101',lat:-2.51,lng:-44.30,source:'shopee',stop:'1',id:'test1'};
 assert.equal(a.applyPermanentCatalog([row]),1);assert.equal(row.lat,executive.lat);assert.equal(row.lng,executive.lng);
