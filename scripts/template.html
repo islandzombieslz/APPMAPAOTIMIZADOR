@@ -110,7 +110,6 @@ function draw(){let gs=groups();$('routeSub').textContent=data.length?data.lengt
 }
 function repaint(){draw()}
 function mapStyle(){return 'https://tiles.openfreemap.org/styles/'+(preferences.mapStyle==='liberty'?'liberty':'bright')}
-applyPermanentCatalog(data);pruneOutOfScope(data);save();
 class RouteMarker{
  constructor(options){this.options=options;this.delegate=null;this.ll=null}
  setLngLat(ll){this.ll=ll;if(this.delegate)this.delegate.setLatLng?this.delegate.setLatLng([ll[1],ll[0]]):this.delegate.setLngLat(ll);return this}
@@ -263,5 +262,5 @@ async function importFile(f){if(!f)return;if(!window.XLSX)return toast('Importad
 function gps(){if(!navigator.geolocation)return toast('Este dispositivo não oferece geolocalização');if(watch!=null){navigator.geolocation.clearWatch(watch);watch=null;if(userMarker){userMarker.remove();userMarker=null}toast('GPS desligado');return}watch=navigator.geolocation.watchPosition(pos=>{const ll=[pos.coords.longitude,pos.coords.latitude];if(!userMarker){const el=document.createElement('div');el.className='userPin';userMarker=new RouteMarker({element:el}).setLngLat(ll).addTo(map);map.flyTo({center:ll,zoom:16})}else userMarker.setLngLat(ll)},e=>{toast('GPS: '+e.message+' (use HTTPS ou localhost)')},{enableHighAccuracy:true,maximumAge:4000,timeout:12000});toast('Buscando localização GPS...')}
 $('importBtn').onclick=()=>$('file').click();$('file').onchange=e=>{importFile(e.target.files?.[0]);e.target.value=''};
 $('settingsBtn').onclick=settingsView;$('listBtn').onclick=listView;$('optBtn').onclick=()=>optimize('all');$('fitBtn').onclick=()=>fit();$('tiltBtn').onclick=()=>map?.easeTo({pitch:map.getPitch()>10?0:55,duration:350});$('gpsBtn').onclick=gps;$('sheetClose').onclick=closeSheet;$('shade').onclick=closeSheet;
-window.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});initMap();
+window.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});applyPermanentCatalog(data);pruneOutOfScope(data);save();initMap();
 </script></body></html>
