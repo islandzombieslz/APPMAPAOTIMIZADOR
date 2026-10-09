@@ -3,7 +3,7 @@ const html=fs.readFileSync(require('path').join(__dirname,'../index.html'),'utf8
 const source=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
 const els=new Map(),storage=new Map();const element=()=>({style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},appendChild(){},insertAdjacentHTML(){},setAttribute(){},value:''});
 const ctx={console,setTimeout(){},clearTimeout(){},window:{addEventListener(){}},navigator:{},document:{getElementById(id){if(!els.has(id))els.set(id,element());return els.get(id)},createElement:element},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},AbortController,URL,Blob,confirm:()=>true};
-vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,inRegion,selectOSM,markerOffset,locationParts,permanentCoordinate,applyPermanentCatalog,groups,routeStop,gps,importFile,setData:x=>data=x,setMap:x=>map=x};`,ctx);
+vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,inRegion,selectOSM,markerOffset,locationParts,permanentCoordinate,applyPermanentCatalog,groups,routeStop,gps,importFile,draw,save,generateCpfMA,cpfAction,getCpfState:()=>cpfState,setData:x=>data=x,setMap:x=>map=x};`,ctx);
 const a=ctx.api;assert(a.BUILDING_DB.length>=192);assert(Object.keys(a.GEO_SEED).length>=122);
 const executive=a.BUILDING_DB.find(b=>b.nome==='Executive Center'||b.nome==='Edifício Executive Center');assert(executive);
 const row={address:executive.logradouro+', '+executive.numero+', Edifício Executive Center, apto 101',lat:-2.51,lng:-44.30,source:'shopee',stop:'1',id:'test1'};
@@ -53,4 +53,17 @@ for(const x of [0,7,"007","12A"])assert.equal(a.routeStop(x),String(x));assert.e
  a.gps();callback({coords:{longitude:-44.29,latitude:-2.5,accuracy:8}});callback({coords:{longitude:-44.291,latitude:-2.501,accuracy:6}});a.gps();
  assert.equal(watchCount,1);assert.deepEqual(updates[0],[-2.501,-44.291]);assert.deepEqual(centers.at(-1),[-44.291,-2.501]);
  console.log('PASS: importação preserva Stop em vez de Sequence; GPS acompanha posições sem duplicar monitoramento.');
+ let created=0,removed=0;
+ ctx.L.marker=()=>{created++;return {addTo(){return this},remove(){removed++}}};
+ a.setMap({raster:{},loaded:()=>true});const route=[{...row,stop:'007',lat:-2.5,lng:-44.29}];a.setData(route);a.draw();a.draw();assert.equal(created,1);assert.equal(removed,0);
+ route[0].lat=-2.501;a.save();a.draw();assert.equal(created,2);assert.equal(removed,1);a.setData([]);a.draw();assert.equal(removed,2);
+ ctx.crypto=require('crypto').webcrypto;
+ function validCpf(s){if(!/^\d{11}$/.test(s)||/^(.)\1+$/.test(s))return false;for(let len=9;len<=10;len++){let total=0;for(let i=0;i<len;i++)total+=Number(s[i])*(len+1-i);if(Number(s[len])!==((total*10)%11)%10)return false}return true}
+ for(let i=0;i<1000;i++){const cpf=a.generateCpfMA();assert(validCpf(cpf));assert.equal(cpf[8],'3')}
+ const pending=[];ctx.setTimeout=(fn,ms)=>{if(ms===80)pending.push(fn)};let copied='';ctx.navigator.clipboard={writeText:async value=>{copied=value}};
+ const generating=a.cpfAction();assert.equal(a.getCpfState(),'loading');await a.cpfAction();assert.equal(pending.length,1);pending.shift()();await generating;assert.equal(a.getCpfState(),'ready');
+ await a.cpfAction();assert.equal(a.getCpfState(),'idle');assert(validCpf(copied));assert.equal(els.get('cpfBtn').innerHTML,'CPF');
+ const again=a.cpfAction();pending.shift()();await again;ctx.navigator.clipboard.writeText=async()=>{throw Error('Denied')};await a.cpfAction();assert.equal(a.getCpfState(),'ready');
+ ctx.navigator.clipboard.writeText=async value=>{copied=value};await a.cpfAction();assert.equal(a.getCpfState(),'idle');
+ console.log('PASS: marcadores reaproveitados e removidos quando necessário; 1000 CPFs, região 3, ciclo e falha de cópia.');
 })().catch(e=>{console.error(e);process.exitCode=1});
