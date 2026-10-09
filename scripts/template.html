@@ -224,7 +224,7 @@ function selectOSM(g,index){const p=g.p;let best=null;const bh=nearestBairro(p),
  if(p.buildingKey&&!bMatch)continue;if(!bMatch&&!(rMatch&&nMatch))continue;
  // Condominio e rua divergentes: podem ser homônimos; rejeitar sem contexto.
  if(bMatch&&road&&!rMatch&&p.street&&rScore<.7)continue;
- let quality=bMatch?'Condomínio/edifício encontrado':nMatch&&rMatch?'Rua e número encontrados':'Rua localizada (aproximada)';let score=(bMatch?95:0)+(rMatch?45:0)+(nMatch?55:0)+(bScore*10)+(rScore*10);let km=kmDist(o,bh);score-=Math.max(0,km-1.5)*4;
+ let quality=bMatch?'Condomínio/edifício encontrado':nMatch&&rMatch?'Rua e número encontrados':'Rua localizada (aproximada)';let score=(bMatch?95:0)+(nbuilding(p.building)&&[name,t['official_name'],t['alt_name'],t['short_name'],t['addr:housename']].filter(Boolean).flatMap(n=>String(n).split(';')).some(n=>nbuilding(n)===nbuilding(p.building))?25:0)+(rMatch?45:0)+(nMatch?55:0)+(bScore*10)+(rScore*10);let km=kmDist(o,bh);score-=Math.max(0,km-1.5)*4;
  matches.push({lat:o.lat,lng:o.lng,quality,score,approx:!bMatch&&!nMatch,provider:'OpenStreetMap regional',label:[name,road,nr].filter(Boolean).join(', '),ref:!!(bMatch||nMatch)});
  }
  matches.sort((a,b)=>b.score-a.score);best=matches[0]||null;if(matches[1]&&best.score-matches[1].score<12&&kmDist(best,matches[1])>.025)return null;return best
