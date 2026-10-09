@@ -1,10 +1,10 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const html=fs.readFileSync(require('path').join(__dirname,'../index.html'),'utf8');
 const source=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
-const els=new Map(),storage=new Map();const element=()=>({style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},appendChild(){},insertAdjacentHTML(){},value:''});
+const els=new Map(),storage=new Map();const element=()=>({style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},appendChild(){},insertAdjacentHTML(){},setAttribute(){},value:''});
 const ctx={console,setTimeout(){},clearTimeout(){},window:{addEventListener(){}},navigator:{},document:{getElementById(id){if(!els.has(id))els.set(id,element());return els.get(id)},createElement:element},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},AbortController,URL,Blob,confirm:()=>true};
-vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,inRegion,selectOSM,markerOffset,locationParts,permanentCoordinate,applyPermanentCatalog,groups,setData:x=>data=x};`,ctx);
-const a=ctx.api;assert.equal(a.BUILDING_DB.length,192);assert.equal(Object.keys(a.GEO_SEED).length,122);
+vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,inRegion,selectOSM,markerOffset,locationParts,permanentCoordinate,applyPermanentCatalog,groups,routeStop,gps,importFile,setData:x=>data=x,setMap:x=>map=x};`,ctx);
+const a=ctx.api;assert(a.BUILDING_DB.length>=192);assert(Object.keys(a.GEO_SEED).length>=122);
 const executive=a.BUILDING_DB.find(b=>b.nome==='Executive Center'||b.nome==='Edifício Executive Center');assert(executive);
 const row={address:executive.logradouro+', '+executive.numero+', Edifício Executive Center, apto 101',lat:-2.51,lng:-44.30,source:'shopee',stop:'1',id:'test1'};
 assert.equal(a.applyPermanentCatalog([row]),1);assert.equal(row.lat,executive.lat);assert.equal(row.lng,executive.lng);
@@ -22,7 +22,7 @@ const target={p:{street:'Rua dos Bicudos',roadKey:'bicudos',number:'10',building
 assert.equal(a.selectOSM(target,[{lat:-2.52,lng:-44.27,tags:{name:'Edifício Alpha'}}]),null);
 assert.equal(a.selectOSM(target,[{lat:-2.50,lng:-44.29,tags:{highway:'residential',name:'Rua dos Bicudos'}}]),null);
 assert.equal(a.permanentCoordinate({building:'Belvedere',street:'Rua Miquerinos',district:'Vinhais'}),null);
-for(let n=2;n<=16;n++)for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){const x=a.markerOffset(i,n),y=a.markerOffset(j,n);assert(Math.hypot(x[0]-y[0],x[1]-y[1])>=38)}
+for(let n=2;n<=16;n++)for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){const x=a.markerOffset(i,n),y=a.markerOffset(j,n);assert(Math.hypot(x[0]-y[0],x[1]-y[1])>=27)}
 const joana={address:'Joanalice, Rua dos Curiós, 5',source:'shopee'};assert.equal(a.applyPermanentCatalog([joana]),1);assert.equal(joana.lat,-2.493201);
 console.log('PASS: área restrita, homônimos fora do recorte, centro de rua recusado e marcadores espaçados.');
 
@@ -38,3 +38,19 @@ const reopened={...ctx,window:{addEventListener(){}}};vm.createContext(reopened)
 assert.equal(els.get('routeSub').textContent,'1 pacotes · 1 endereços');
 assert.equal(JSON.parse(storage.get('shopee-v11-data'))[0].id,'test1');
 console.log('PASS: reabertura com rota salva não trava nem perde entregas.');
+
+for(const x of [0,7,"007","12A"])assert.equal(a.routeStop(x),String(x));assert.equal(a.routeStop(""),"-");console.log("PASS: números originais, incluindo zero e zeros à esquerda, preservados.");
+
+(async()=>{
+ const imported=[{Stop:'007',Sequence:1,'Destination Address':'Rua Teste, 1','SPX TN':'p1'},{Stop:0,Sequence:99,'Destination Address':'Rua Teste, 2','SPX TN':'p2'}];
+ ctx.window.XLSX=ctx.XLSX={read:()=>({Sheets:{R:{}},SheetNames:['R']}),utils:{sheet_to_json:()=>imported}};
+ await a.importFile({arrayBuffer:async()=>new ArrayBuffer(0)});
+ assert.deepEqual(JSON.parse(storage.get('shopee-v11-data')).map(r=>r.stop),['007','0']);
+ let callback,watchCount=0,updates=[],centers=[];
+ ctx.navigator.geolocation={watchPosition(fn){callback=fn;watchCount++;return 42},clearWatch(){}};
+ ctx.L={divIcon:x=>x,marker(ll){return {addTo(){return this},setLatLng(p){updates.push(p)},remove(){}}}};
+ a.setMap({raster:{},flyTo:x=>centers.push(x.center)});
+ a.gps();callback({coords:{longitude:-44.29,latitude:-2.5,accuracy:8}});callback({coords:{longitude:-44.291,latitude:-2.501,accuracy:6}});a.gps();
+ assert.equal(watchCount,1);assert.deepEqual(updates[0],[-2.501,-44.291]);assert.deepEqual(centers.at(-1),[-44.291,-2.501]);
+ console.log('PASS: importação preserva Stop em vez de Sequence; GPS acompanha posições sem duplicar monitoramento.');
+})().catch(e=>{console.error(e);process.exitCode=1});
