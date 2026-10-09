@@ -2,7 +2,7 @@ import json,re
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 db=json.loads((root/'data/buildings.json').read_text())
-assert len(db)==186 and len({b['id'] for b in db})==186
+assert len(db)>=186 and len({b['id'] for b in db})==len(db)
 for b in db:
  assert (b['lat'] is None)==(b['lng'] is None)
  if b['lat'] is not None:

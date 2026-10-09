@@ -375,7 +375,10 @@
     "geo_name": "Condomínio Farol da Ilha",
     "geo_precision": "Centro do prédio/área mapeada; portaria não verificada",
     "geo_original_address": "Avenida dos Holandeses 11 Ponta d’Areia",
-    "aliases": []
+    "aliases": [
+      "Farol da Ilha",
+      "Farol da Ilha Holandeses"
+    ]
   },
   {
     "nome": "Edifício Ponta d’Areia",
@@ -1094,20 +1097,22 @@
   {
     "nome": "La Rochelle",
     "logradouro": "Rua Professor Pinho Rodrigues",
-    "numero": "",
+    "numero": "1/3",
     "bairro": "Jardim Renascença",
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-053",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.499251111,
+    "lng": -44.288944963,
+    "geo_status": "mapeado",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "Waze",
+    "geo_ref": "https://www.waze.com/pt-BR/live-map/directions/edificio-la-rochelle-r.-prof.-pinho-rodrigues-sao-luis?to=place.w.206898927.2069054806.9659916",
     "geo_original_address": "Rua Professor Pinho Rodrigues  Jardim Renascença",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Destino publicado; portaria não verificada",
+    "aliases": [
+      "La Rochelle"
+    ]
   },
   {
     "nome": "Mont Blanc",
@@ -1888,20 +1893,37 @@
   {
     "nome": "Edifício Pratik Residence",
     "logradouro": "Rua dos Bicudos",
-    "numero": "Lote 03, Quadra 21",
+    "numero": "3",
     "bairro": "Renascença II",
     "tipo": "residencial",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-091",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.498729,
+    "lng": -44.289719,
+    "geo_status": "endereco_georreferenciado",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
     "geo_original_address": "Rua dos Bicudos Lote 03, Quadra 21 Renascença II",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Endereço Rua dos Bicudos, 3, publicado para Pratik e georreferenciado no IBGE; portaria não verificada",
+    "aliases": [
+      "Pratik",
+      "Pratik Residence"
+    ],
+    "geo_address_ref": "https://cnpj.biz/08692613000149",
+    "geo_evidence": {
+      "rows": 36,
+      "name_match": false,
+      "cnefe_ids": [
+        "8986476",
+        "8986477",
+        "8986478"
+      ],
+      "nv_geo": {
+        "1": 30,
+        "2": 6
+      }
+    }
   },
   {
     "nome": "Condomínio Edifício Renascença",
@@ -1938,7 +1960,9 @@
     "geo_name": "Edifício Belvedere",
     "geo_precision": "Destino cadastrado no Waze; portaria não verificada",
     "geo_original_address": "Rua Miquerinos 1 Renascença",
-    "aliases": []
+    "aliases": [
+      "Belvedere"
+    ]
   },
   {
     "nome": "Edifício Portal da Lagoa",
@@ -2228,8 +2252,8 @@
   },
   {
     "nome": "Condomínio Edifício Roterdan",
-    "logradouro": "",
-    "numero": "",
+    "logradouro": "Rua dos Bicudos",
+    "numero": "9",
     "bairro": "Jardim Renascença",
     "tipo": "residencial",
     "situacao": "Endereço publicado; coordenadas não verificadas",
@@ -2242,7 +2266,12 @@
     "geo_ref": "",
     "geo_original_address": "Jardim Renascença",
     "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "aliases": [
+      "Roterdan",
+      "Rotterdam",
+      "Roterdam"
+    ],
+    "geo_address_ref": "https://cnpj.biz/07785946000150"
   },
   {
     "nome": "Acapulco Residence",
@@ -3920,5 +3949,163 @@
     "geo_precision": "Localização não resolvida com segurança",
     "geo_original_address": "Rua Marcelino Champagnat 6 Renascença",
     "aliases": []
+  },
+  {
+    "id": "slz-187",
+    "nome": "Joanalice Centro de Beleza",
+    "logradouro": "Rua dos Curiós",
+    "numero": "5",
+    "bairro": "Ponta do Farol",
+    "tipo": "Local/edifício",
+    "situacao": "Cadastro revisado",
+    "aliases": [
+      "Joanalice",
+      "Salão Joanalice"
+    ],
+    "lat": -2.493201,
+    "lng": -44.291564,
+    "geo_status": "endereco_georreferenciado",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário; portaria não verificada",
+    "geo_address": "rua curios, 5",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "8995999"
+      ],
+      "rows": 1,
+      "name_match": false,
+      "nv_geo": {
+        "1": 1
+      }
+    }
+  },
+  {
+    "id": "slz-188",
+    "nome": "Champs Mall",
+    "logradouro": "Avenida Ivan Loureiro",
+    "numero": "4",
+    "bairro": "Península",
+    "tipo": "Local/edifício",
+    "situacao": "Cadastro revisado",
+    "aliases": [
+      "Champsmall"
+    ],
+    "lat": -2.4995942,
+    "lng": -44.3120861,
+    "geo_status": "mapeado",
+    "geo_provider": "OpenStreetMap",
+    "geo_ref": "https://www.openstreetmap.org/way/1160221370",
+    "geo_precision": "Centro da área mapeada; portaria não verificada"
+  },
+  {
+    "id": "slz-189",
+    "nome": "Condomínio Morada de Avalon",
+    "logradouro": "Rua Jaracati",
+    "numero": "6",
+    "bairro": "Renascença II",
+    "tipo": "Local/edifício",
+    "situacao": "Cadastro revisado",
+    "aliases": [
+      "Morada de Avalon",
+      "Morada de Alavlon"
+    ],
+    "lat": -2.496271,
+    "lng": -44.283747,
+    "geo_status": "mapeado",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário; portaria não verificada",
+    "geo_address": "rua jaracati, 6",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9543078",
+        "9543080",
+        "9543092"
+      ],
+      "rows": 40,
+      "name_match": true,
+      "nv_geo": {
+        "2": 40
+      }
+    }
+  },
+  {
+    "id": "slz-190",
+    "nome": "Edifício Andaluzia",
+    "logradouro": "Avenida Jornalista Miércio Jorge",
+    "numero": "21",
+    "bairro": "Renascença",
+    "tipo": "Local/edifício",
+    "situacao": "Cadastro revisado",
+    "aliases": [
+      "Andaluiza",
+      "Andaluzi",
+      "Andaluzia"
+    ],
+    "lat": -2.497862,
+    "lng": -44.287338,
+    "geo_status": "mapeado",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário; portaria não verificada",
+    "address_aliases": [
+      "Avenida do Vale"
+    ],
+    "geo_address": "avenida jornalista miercio jorge, 21",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9543246",
+        "9543247",
+        "9543249"
+      ],
+      "rows": 24,
+      "name_match": true,
+      "nv_geo": {
+        "1": 19,
+        "2": 5
+      }
+    }
+  },
+  {
+    "id": "slz-191",
+    "nome": "Edifício Lausanne",
+    "logradouro": "Rua das Mitras",
+    "numero": "2",
+    "bairro": "Renascença",
+    "tipo": "Local/edifício",
+    "situacao": "Cadastro revisado",
+    "aliases": [
+      "Lausane",
+      "Lausanne"
+    ],
+    "lat": -2.498394062,
+    "lng": -44.287285455,
+    "geo_status": "mapeado",
+    "geo_provider": "Waze",
+    "geo_ref": "https://www.waze.com/live-map/directions/edificio-lausanne-sao-luis?to=place.w.206898927.2069054806.9674262",
+    "geo_precision": "Destino publicado; portaria não verificada"
+  },
+  {
+    "id": "slz-192",
+    "nome": "Edifício Fontana Di Trevi",
+    "logradouro": "Rua Professor Pinho Rodrigues",
+    "numero": "16",
+    "bairro": "Jardim Renascença",
+    "tipo": "Local/edifício",
+    "situacao": "Cadastro revisado",
+    "aliases": [
+      "Fontana de Trevi",
+      "Fontana Di Trevi"
+    ],
+    "lat": -2.498820501823365,
+    "lng": -44.28873049917754,
+    "geo_status": "mapeado",
+    "geo_provider": "Waze",
+    "geo_ref": "https://www.waze.com/live-map/directions/edificio-fontana-di-trevi-r.-prof.-pinho-rodrigues-16-sao-luis?to=place.w.206898927.2069054806.11891257",
+    "geo_precision": "Destino publicado; portaria não verificada",
+    "address_aliases": [
+      "Rua Juno"
+    ]
   }
 ]
