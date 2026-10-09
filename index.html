@@ -50,7 +50,7 @@ function pruneOutOfScope(rows){for(const r of rows)if(!inRegion(r)){r.lat=null;r
 function locationParts(d){const key=String(d.address||'')+'|'+String(d.bairro||'')+'|'+String(d.building||'');if(locationMemo.has(key))return locationMemo.get(key);const value=parseLocation(d);if(locationMemo.size>1500)locationMemo.clear();locationMemo.set(key,value);return value}
 function parseLocation(d){
  const s=String(d.address||'');const buildingHint=String(d.building||'').trim(); const r=s.match(/\b(?:rua|r\.|avenida|av\.?|travessa|tv\.?|alameda|estrada|praça|praca|rodovia)\s+[^,;/]+/i);
- const rawStreet=(r?r[0]:s.split(',')[0]||'').trim();const street=rawStreet.replace(/\s+(?:edif[ií]cio|ed\.?|condom[ií]nio|cond\.?|residencial|cd\.?|apartamento|apart\.?|apto\.?|apt\.?)\b.*$/i,'').replace(/\s+\d{1,5}\s*$/,'').trim();const after=r?s.slice(r.index+street.length):s.slice(street.length);
+ const rawStreet=(r?r[0]:'').trim();const street=rawStreet.replace(/\s+(?:edif[ií]cio|ed\.?|condom[ií]nio|cond\.?|residencial|cd\.?|apartamento|apart\.?|apto\.?|apt\.?)\b.*$/i,'').replace(/\s+\d{1,5}\s*$/,'').trim();const after=r?s.slice(r.index+street.length):s.slice(street.length);
  let number=(after.match(/^\s*[,;:#-]?\s*(\d{1,5})\b/)||[])[1]||'';
  const matches=[...s.matchAll(/\b(?:edif[ií]cio|ed\.?|condom[ií]nio|cond\.?|cd\.?|residencial|res\.?)\b\s*[-:]?\s*([^,;\/]+?)(?=\s+(?:apt?\.?|apart\.?|apartamento|bloco|sala|torre|ap\.?\s*\d)|[,;\/]|$)/gi)];
  let building=(matches.map(x=>x[1].trim()).filter(x=>x.length>2).sort((a,b)=>b.length-a.length)[0]||'');
