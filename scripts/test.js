@@ -1,0 +1,17 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const html=fs.readFileSync(require('path').join(__dirname,'../index.html'),'utf8');
+const source=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
+const els=new Map(),storage=new Map();const element=()=>({style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},appendChild(){},insertAdjacentHTML(){},value:''});
+const ctx={console,setTimeout(){},clearTimeout(){},window:{addEventListener(){}},navigator:{},document:{getElementById(id){if(!els.has(id))els.set(id,element());return els.get(id)},createElement:element},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},AbortController,URL,Blob,confirm:()=>true};
+vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,locationParts,permanentCoordinate,applyPermanentCatalog,groups,setData:x=>data=x};`,ctx);
+const a=ctx.api;assert.equal(a.BUILDING_DB.length,186);assert.equal(Object.keys(a.GEO_SEED).length,107);
+const executive=a.BUILDING_DB.find(b=>b.nome==='Executive Center'||b.nome==='Edifício Executive Center');assert(executive);
+const row={address:executive.logradouro+', '+executive.numero+', Edifício Executive Center, apto 101',lat:-2.51,lng:-44.30,source:'shopee',stop:'1',id:'test1'};
+assert.equal(a.applyPermanentCatalog([row]),1);assert.equal(row.lat,executive.lat);assert.equal(row.lng,executive.lng);
+const unknown={address:'Rua inexistente, 999, Edifício ZZZZ Teste',lat:null,lng:null};assert.equal(a.applyPermanentCatalog([unknown]),0);assert.equal(unknown.lat,null);
+const manual={...row,lat:-2.50,lng:-44.29,source:'manual'};a.applyPermanentCatalog([manual]);assert.equal(manual.lat,-2.50);
+assert(!a.geoDb['slz-186']);
+const m=a.permanentCoordinate({building:'Montreal Residence',street:'Rua Marcelino Champagnat',number:'6'});assert.equal(m,null);
+a.setData([{...row,address:'Rua do Teste, 1, Edifício Alfa'},{...row,id:'test2',address:'Rua do Teste, 1, Edifício Beta'}]);assert.equal(a.groups().length,2);
+assert(html.includes('const SEED=[];'));assert(!html.includes('catálogo V6'));
+console.log('PASS: importação automática, pendências, proteção de correções manuais, nomes repetidos e separação de prédios.');
