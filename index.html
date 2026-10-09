@@ -62,31 +62,47 @@ function parseLocation(d){
  return {street,roadKey:nstr(street),number,building,buildingKey:nbuilding(building),quadra,district,originalAddress:s,buildingHint};
 }
 // Cadastro permanente de locais com evidência e precisão explícitas.
+function normalizedPlace(x){return nbuilding(x).replace(/\b(d|de|da|do|das|dos)\b/g,' ').replace(/\s+/g,' ').trim()}
+function strongPlaceSimilarity(a,b){
+ const x=normalizedPlace(a),y=normalizedPlace(b);if(!x||!y)return 0;
+ if(x===y)return 1;
+ const tx=x.split(' '),ty=y.split(' ');
+ if((tx.length===1&&tx[0].length<6)||(ty.length===1&&ty[0].length<6))return 0;
+ const score=likeness(x,y);if(score>=.8)return score;
+ if(tx.length===1&&ty.length===1&&tx[0].length>=6&&ty[0].length>=6&&lev1(tx[0],ty[0]))return .94;
+ return 0;
+}
+// O nome único do edifício tem prioridade: ruas incorretas não impedem o reconhecimento.
 function catalogMatches(p){
- if(outsideDistrict(p))return [];const name=nbuilding(p.building||''),road=nstr(p.street||''),num=String(p.number||'');
- const candidates=[];
+ if(outsideDistrict(p))return [];
+ const name=normalizedPlace(p.building||''),road=nstr(p.street||''),num=String(p.number||'');
+ const full=normalizedPlace((p.originalAddress||'')+' '+(p.buildingHint||'')),words=full.split(' ').filter(Boolean);
+ const found=[];
  for(const item of BUILDING_DB.filter(b=>!b.duplicate_of)){
-  const names=[item.nome,...(item.aliases||[])].map(nbuilding).filter(Boolean),nameScore=name?Math.max(0,...names.map(n=>likeness(name,n))):0;
+  const names=[item.nome,...(item.aliases||[])].map(normalizedPlace).filter(Boolean);
   const roads=[item.logradouro,...(item.address_aliases||[])].filter(Boolean).map(nstr);
-  const roadScore=road&&roads.length?Math.max(...roads.map(r=>likeness(road,r))):0;
-  const raw=' '+nbuilding((p.originalAddress||'')+' '+(p.buildingHint||''))+' ';
-  const namedInline=names.some(n=>n.length>=5&&raw.includes(' '+n+' '));
-  const effectiveNameScore=Math.max(nameScore,namedInline?1:0);
+  const roadScore=road&&roads.length?Math.max(...roads.map(r=>likeness(r,road))):0;
   const numMatch=/^\d+$/.test(item.numero)&&num===item.numero;
-  const named=effectiveNameScore>=.9&&(name.length>=4||namedInline);
-  const numbered=!name&&!namedInline&&roadScore>=.97&&numMatch;
+  const explicit=name?Math.max(0,...names.map(n=>strongPlaceSimilarity(name,n))):0;
+  const inline=names.some(n=>n.length>=6&&(' '+full+' ').includes(' '+n+' '));
+  let fuzzy=0;
+  if(!inline)for(const n of names){
+   if(n.length<7)continue;const segments=n.split(' ');if(segments.length>4)continue;
+   for(let i=0;i+segments.length<=words.length;i++)fuzzy=Math.max(fuzzy,strongPlaceSimilarity(words.slice(i,i+segments.length).join(' '),n));
+  }
+  const match=Math.max(explicit,inline?1:0,fuzzy);
+  const named=match>=.9&&(name.length>=5||inline||fuzzy>=.9);
+  const numbered=!name&&!inline&&fuzzy<.9&&roadScore>=.97&&numMatch;
   if(!named&&!numbered)continue;
-  // Rua divergente bloqueia um prédio com nome parecido: evita correspondências em outro bairro.
-  if(road&&roads.length&&roadScore<.45)continue;
   if(numbered&&!geoDb[dbKey(item)])continue;
-  candidates.push({item,score:named?effectiveNameScore*150+(names.includes(name)?25:0)+roadScore*30+(numMatch?10:0):130});
+  found.push({item,score:named?match*180+(names.includes(name)?15:0)+roadScore*20+(numMatch?8:0):120});
  }
- candidates.sort((a,b)=>b.score-a.score);
- if(candidates.length>1&&candidates[0].score-candidates[1].score<12){
-  const a=geoDb[dbKey(candidates[0].item)],b=geoDb[dbKey(candidates[1].item)];
+ found.sort((a,b)=>b.score-a.score);
+ if(found.length>1&&found[0].score-found[1].score<16){
+  const a=geoDb[dbKey(found[0].item)],b=geoDb[dbKey(found[1].item)];
   if(!a||!b||kmDist(a,b)>.025)return [];
  }
- return candidates.slice(0,1);
+ return found.slice(0,1);
 }
 function permanentCoordinate(p){const hit=catalogMatches(p)[0];const found=hit&&geoDb[dbKey(hit.item)];return found&&inRegion(found)?{...found,catalogId:hit.item.id}:null}
 function applyPermanentCatalog(rows){let count=0;for(const d of rows){if(d.source==='manual')continue;const p=locationParts(d),found=permanentCoordinate(p);if(!found)continue;d.lat=found.lat;d.lng=found.lng;d.source='Cadastro permanente';d.quality=found.quality;d.catalogId=found.catalogId;count++}return count}
