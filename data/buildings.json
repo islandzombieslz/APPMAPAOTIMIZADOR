@@ -621,20 +621,45 @@
   {
     "nome": "Condomínio do Edifício Imperial Premium",
     "logradouro": "Rua dos Sabiás",
-    "numero": "",
+    "numero": "104",
     "bairro": "Jardim Renascença",
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-029",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.498662,
+    "lng": -44.290379,
+    "geo_status": "endereco_georreferenciado",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
     "geo_original_address": "Rua dos Sabiás  Jardim Renascença",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "aliases": [
+      "Imperial Premium",
+      "Imperial Premiun"
+    ],
+    "address_aliases": [
+      "Rua das Perdizes"
+    ],
+    "geo_address": "Rua dos Sabiás, 104",
+    "address_ref": "https://joeudesaraujoadv.com/contratos-e-suas-especies/",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "183407291",
+        "183407295",
+        "183407299",
+        "183407302"
+      ],
+      "rows": 40,
+      "name_match": false,
+      "nv_geo": {
+        "1": 40
+      }
+    },
+    "address_refs": [
+      "https://www.benditoguia.com.br/empresa/edificio-imperial-premium-renascenca-jardim-sao-luis-ma",
+      "https://cnpj.biz/42552492000178"
+    ]
   },
   {
     "nome": "Condomínio Millennium Corporate Tower",
@@ -734,20 +759,37 @@
   {
     "nome": "Edifício Ana Beatriz",
     "logradouro": "Rua dos Juritis",
-    "numero": "S/N",
+    "numero": "25",
     "bairro": "Renascença",
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-035",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.497392,
+    "lng": -44.292065,
+    "geo_status": "endereco_georreferenciado",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
     "geo_original_address": "Rua dos Juritis S/N Renascença",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "aliases": [
+      "Ana Beatriz"
+    ],
+    "geo_address": "Rua dos Juritis, 25",
+    "address_ref": "https://www.solutudo.com.br/empresas/ma/s-luis/condominios-edificios/condominio-ana-beatriz-4493871",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9540470",
+        "9540472",
+        "9540473",
+        "9540477"
+      ],
+      "rows": 32,
+      "name_match": false,
+      "nv_geo": {
+        "2": 32
+      }
+    }
   },
   {
     "nome": "Business Center",
@@ -963,22 +1005,41 @@
     "aliases": []
   },
   {
-    "nome": "Ed Luma",
+    "nome": "Edifício Luma",
     "logradouro": "Rua dos Juritis",
-    "numero": "12",
+    "numero": "15",
     "bairro": "Jardim Renascença",
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
     "id": "slz-046",
-    "lat": null,
-    "lng": null,
-    "geo_status": "pendente",
+    "lat": -2.497413,
+    "lng": -44.291671,
+    "geo_status": "endereco_georreferenciado",
     "geo_checked_at": "2026-10-09",
-    "geo_provider": "",
-    "geo_ref": "",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
     "geo_original_address": "Rua dos Juritis 12 Jardim Renascença",
-    "geo_precision": "Localização não resolvida com segurança",
-    "aliases": []
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "aliases": [
+      "Luma",
+      "Condomínio Luma"
+    ],
+    "geo_address": "Rua dos Juritis, 15",
+    "address_ref": "https://www.solutudo.com.br/empresas/ma/s-luis/condominios-edificios/condominio-luma-4497969",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9540427",
+        "9540428",
+        "9540429",
+        "9540431"
+      ],
+      "rows": 40,
+      "name_match": false,
+      "nv_geo": {
+        "2": 38,
+        "3": 2
+      }
+    }
   },
   {
     "nome": "Edifício Atrium Plaza",
@@ -1365,8 +1426,8 @@
   },
   {
     "nome": "Edifício Executive Lake Center",
-    "logradouro": "Rua das Juçaras",
-    "numero": "",
+    "logradouro": "Rua das Andirobas",
+    "numero": "s/n, quadra 99, lotes 29 e 30",
     "bairro": "Jardim Renascença",
     "tipo": "Condomínio/edifício",
     "situacao": "Endereço publicado; coordenadas não verificadas",
@@ -1381,7 +1442,15 @@
     "geo_precision": "Centro do prédio/área mapeada; portaria não verificada",
     "geo_crosscheck": "https://www.waze.com/live-map/directions/executive-lake-center-r.-das-andirobas-10-sao-luis?to=place.w.206898927.2069054806.15031440",
     "geo_original_address": "Rua das Juçaras  Jardim Renascença",
-    "aliases": []
+    "aliases": [
+      "Executive Lake Center",
+      "SINDAFTEMA"
+    ],
+    "address_aliases": [
+      "Rua das Juçaras",
+      "Rua das Anditobas"
+    ],
+    "address_ref": "https://www.sindaftema.org.br/contato/"
   },
   {
     "nome": "Condomínio Edifício Fênix",
@@ -4581,12 +4650,15 @@
   {
     "id": "slz-221",
     "nome": "Condomínio Canopus",
-    "logradouro": "",
-    "numero": "",
-    "bairro": "Área operacional de São Luís",
+    "logradouro": "Rua das Andirobas",
+    "numero": "6",
+    "bairro": "Jardim Renascença",
     "tipo": "Condomínio/edifício",
     "situacao": "Objeto cartográfico nomeado; endereço incompleto quando não publicado",
-    "aliases": [],
+    "aliases": [
+      "Canopus",
+      "Condomínio do Edifício Canopus"
+    ],
     "lat": -2.5037776,
     "lng": -44.2958068,
     "geo_status": "mapeado",
@@ -4599,7 +4671,11 @@
       "osm_type": "way",
       "osm_id": 1074623239,
       "osm_snapshot": "2026-05-31T22:37:44Z"
-    }
+    },
+    "address_aliases": [
+      "Rua das Anditobas"
+    ],
+    "address_ref": "https://cnpj.biz/00061822000182"
   },
   {
     "id": "slz-222",
@@ -5248,12 +5324,16 @@
   {
     "id": "slz-250",
     "nome": "Edifício Mirage Residence",
-    "logradouro": "",
-    "numero": "",
-    "bairro": "Área operacional de São Luís",
+    "logradouro": "Avenida dos Holandeses",
+    "numero": "1",
+    "bairro": "Ponta D’Areia",
     "tipo": "Condomínio/edifício",
     "situacao": "Objeto cartográfico nomeado; endereço incompleto quando não publicado",
-    "aliases": [],
+    "aliases": [
+      "Mirage",
+      "Mirage Residence",
+      "Condomínio do Edifício Mirage Residence"
+    ],
     "lat": -2.4961813,
     "lng": -44.3068498,
     "geo_status": "mapeado",
@@ -5266,7 +5346,8 @@
       "osm_type": "way",
       "osm_id": 1311064899,
       "osm_snapshot": "2026-05-31T22:37:44Z"
-    }
+    },
+    "address_ref": "https://cnpj.biz/44696908000157"
   },
   {
     "id": "slz-251",
@@ -5358,6 +5439,237 @@
       "osm_type": "relation",
       "osm_id": 17485084,
       "osm_snapshot": "2026-05-31T22:37:44Z"
+    }
+  },
+  {
+    "id": "slz-255",
+    "nome": "Sassá Sushi",
+    "logradouro": "Avenida Mário Meireles",
+    "numero": "21A",
+    "bairro": "Ponta D’Areia",
+    "tipo": "Restaurante/empresa",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Sassa Sushi",
+      "Sassá Sushi Ponta d’Areia"
+    ],
+    "lat": -2.4946986,
+    "lng": -44.3044294,
+    "geo_status": "mapeado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "Locais do Brasil / ligação de rota",
+    "geo_ref": "https://www.locaisdobrasil.com.br/encontre/restaurantes/sao-luis-ma/sassa-sushi/634f4187bd08cbb564414560",
+    "geo_precision": "Destino publicado na ligação de rota do restaurante; entrada não verificada",
+    "address_aliases": [
+      "Avenida Professor Mário Meireles"
+    ],
+    "geo_crosscheck": {
+      "provider": "IBGE CNEFE 2022",
+      "ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+      "lat": -2.49471,
+      "lng": -44.30439
+    }
+  },
+  {
+    "id": "slz-256",
+    "nome": "Condomínio Mário Meireles",
+    "logradouro": "Rua dos Juritis",
+    "numero": "10",
+    "bairro": "Jardim Renascença",
+    "tipo": "Condomínio/edifício",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Mário Meireles",
+      "Edifício Mário Meireles"
+    ],
+    "lat": -2.4970978,
+    "lng": -44.2907632,
+    "geo_status": "endereco_georreferenciado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "Waze — endereço publicado",
+    "geo_ref": "https://www.waze.com/live-map/directions/brazil/state-of-maranhao/sao-luis/r.-dos-juritis-10?to=place.ChIJ7SdeaDGM9gcRtEAsjVzipOw",
+    "geo_name": "R. dos Juritís, 10",
+    "geo_precision": "Destino cartográfico do endereço Rua dos Juritis, 10; portaria do condomínio não verificada",
+    "address_ref": "https://cnpj.biz/13039430000169",
+    "geo_crosscheck": {
+      "provider": "IBGE CNEFE 2022",
+      "ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+      "lat": -2.497135,
+      "lng": -44.290746
+    }
+  },
+  {
+    "id": "slz-257",
+    "nome": "Edifício Saint James",
+    "logradouro": "Rua dos Sabiás",
+    "numero": "18",
+    "bairro": "Jardim Renascença",
+    "tipo": "Condomínio/edifício",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Saint James"
+    ],
+    "lat": -2.498199,
+    "lng": -44.29202,
+    "geo_status": "mapeado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "geo_address": "Rua dos Sabiás, 18",
+    "address_ref": "https://cepsbrasil.com.br/ma/sao-luis/renascenca/rua-dos-sabias-18-cep-65077912",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9541666",
+        "9541724",
+        "9541665",
+        "9541738"
+      ],
+      "rows": 39,
+      "name_match": true,
+      "nv_geo": {
+        "1": 30,
+        "2": 9
+      }
+    }
+  },
+  {
+    "id": "slz-258",
+    "nome": "Edifício Demoiselle",
+    "logradouro": "Rua dos Sabiás",
+    "numero": "10",
+    "bairro": "Jardim Renascença",
+    "tipo": "Condomínio/edifício",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Demoiselle"
+    ],
+    "lat": -2.497885,
+    "lng": -44.289936,
+    "geo_status": "mapeado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "geo_address": "Rua dos Sabiás, 10",
+    "address_ref": "https://loft.com.br/condominio/condominio-do-edificio-demoiselle-renascenca-sao-luis-ma/CXGP1AAP",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9068136",
+        "9068138",
+        "9068139",
+        "9068158"
+      ],
+      "rows": 20,
+      "name_match": true,
+      "nv_geo": {
+        "1": 18,
+        "3": 2
+      }
+    }
+  },
+  {
+    "id": "slz-259",
+    "nome": "Edifício Bagatelle",
+    "logradouro": "Rua dos Sabiás",
+    "numero": "14",
+    "bairro": "Jardim Renascença",
+    "tipo": "Condomínio/edifício",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Bagatelle"
+    ],
+    "lat": -2.497883,
+    "lng": -44.290397,
+    "geo_status": "mapeado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "geo_address": "Rua dos Sabiás, 14",
+    "address_ref": "https://www.triunfoimoveis.com/condominio/edificio-bagatelle-sao-luis-ma",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9068141",
+        "9068142",
+        "9068144",
+        "9068145"
+      ],
+      "rows": 20,
+      "name_match": true,
+      "nv_geo": {
+        "1": 19,
+        "2": 1
+      }
+    }
+  },
+  {
+    "id": "slz-260",
+    "nome": "Condomínio Ponta Negra",
+    "logradouro": "Rua dos Sabiás",
+    "numero": "11",
+    "bairro": "Jardim Renascença",
+    "tipo": "Condomínio/edifício",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Ponta Negra"
+    ],
+    "lat": -2.498063,
+    "lng": -44.290803,
+    "geo_status": "mapeado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "geo_address": "Rua dos Sabiás, 11",
+    "address_ref": "https://www.esdrasousa.com.br/imovel/apartamento-ponta-negra-renascenca-sao-luis-ma/174226",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9541669",
+        "9541719",
+        "9541697",
+        "9541763"
+      ],
+      "rows": 40,
+      "name_match": true,
+      "nv_geo": {
+        "1": 40
+      }
+    }
+  },
+  {
+    "id": "slz-261",
+    "nome": "Edifício Praia Grande",
+    "logradouro": "Rua dos Juritis",
+    "numero": "6",
+    "bairro": "Jardim Renascença",
+    "tipo": "Condomínio/edifício",
+    "situacao": "Cadastro pesquisado",
+    "aliases": [
+      "Praia Grande"
+    ],
+    "lat": -2.497012,
+    "lng": -44.291442,
+    "geo_status": "mapeado",
+    "geo_checked_at": "2026-10-09",
+    "geo_provider": "IBGE CNEFE 2022",
+    "geo_ref": "https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2022/Arquivos_CNEFE/CSV/Municipio/21_MA/2111300_SAO_LUIS.zip",
+    "geo_precision": "Coordenada do endereço censitário cruzado com nome/endereço publicado; portaria não verificada",
+    "geo_address": "Rua dos Juritis, 6",
+    "address_ref": "https://licitacoes.saojoaodospatos.ma.gov.br/arquivos/1518777967527.pdf",
+    "geo_evidence": {
+      "cnefe_ids": [
+        "9541888",
+        "9541880",
+        "9541881",
+        "9541864"
+      ],
+      "rows": 21,
+      "name_match": true,
+      "nv_geo": {
+        "1": 16,
+        "2": 5
+      }
     }
   }
 ]

@@ -1,4 +1,4 @@
-# Rotas Shopee — Mapa V20
+# Rotas Shopee — Mapa V21
 
 Aplicativo para importar uma planilha de entregas e reconhecer os prédios usando coordenadas permanentes incorporadas. Abra `index.html` ou o endereço do GitHub Pages após a publicação.
 
@@ -59,3 +59,5 @@ Na V18, o mapa e a camada de imagens têm limites na região atendida, zoom mín
 Na V19, a área visual ganha cerca de 2,2 km de margem ao redor do retângulo atendido, sem máscara de corte. O zoom mínimo passa a 12 e a resistência nas bordas diminui. O filtro geográfico das entregas continua no mesmo polígono operacional, independente da área visível. As melhorias de renderização da V18 são mantidas.
 
 V20: marcadores redondos amarelos com borda branca, haste e base; quantidade em selo verde de 10 px. Mais 39 registros cartográficos com coordenadas, total 251 registros / 179 coordenadas (163 na área). Inclui 345 objetos nomeados do extrato OpenStreetMap de 31/05/2026, com atualização regional em segundo plano. Busca também nomes de lojas, nomes alternativos e endereços nomeados, normaliza prefixos e recusa homônimos distantes sem contexto. Coordenadas de centros cartográficos não garantem a posição da portaria.
+
+V21: 258 registros, 189 coordenadas totais / 173 dentro da área; 10 locais antes sem ponto permanente passam a ter coordenadas. Imperial Premium, Ana Beatriz e Luma cruzam endereço publicado com CNEFE; Sassá Sushi cruza ligação de rota do estabelecimento com CNEFE; Mário Meireles usa destino Waze do endereço confirmado. Novos Saint James, Demoiselle, Bagatelle, Ponta Negra e Praia Grande usam objetos censitários nomeados. Endereços revisados de Canopus e Executive Lake Center (Andirobas) e Mirage (Holandeses); variação Anditobas aceita. Nomes de ruas não são interpretados como prédios homônimos. Fontes e precisão são registradas por local.

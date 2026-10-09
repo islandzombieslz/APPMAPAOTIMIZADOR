@@ -89,3 +89,10 @@ for(const b of a.BUILDING_DB.filter(b=>Number(b.id.slice(4))>212)){
 const pin=a.marker({stop:'007',items:[{source:'shopee'}],p:{}},3);assert(pin.innerHTML.includes('007'));assert(pin.innerHTML.includes('class="count">3'));
 assert(html.includes('background:#20a65a'));assert(html.includes('.pin::before'));assert(html.includes('border-radius:50%!important'));
 console.log('PASS: prefixos normalizados, homônimos recusados, local sem prefixo, novos registros e marcador com pacotes.');
+
+const namedStops=[['Imperial Premium','Rua dos Sabiás','104'],['Canopus','Rua das Andirobas','6'],['Executive Lake Center','Rua das Andirobas','s/n'],['Mirage','Avenida dos Holandeses','1'],['Mário Meireles','Rua dos Juritis','10'],['Sassá Sushi','Avenida Mário Meireles','21A']];
+for(const [name,road,num]of namedStops){const row={address:road+', '+num+', '+name+', sala 101',source:'shopee'};assert.equal(a.applyPermanentCatalog([row]),1,name);assert(a.inRegion(row),name)}
+const avenue=a.locationParts({address:'Avenida Mário Meireles, 21A, Ponta D’Areia'});assert.equal(avenue.building,'');assert.equal(a.permanentCoordinate(avenue),null);
+const sassa=a.locationParts({address:'Avenida Mário Meireles, 21A, Sassa Sushi, Ponta D’Areia'});assert.equal(a.permanentCoordinate(sassa).catalogId,'slz-255');
+assert.equal(a.permanentCoordinate({building:'Canopus',street:'Rua das Anditobas',number:'6'}).catalogId,'slz-221');
+console.log('PASS: locais solicitados, Anditobas e distinção entre avenida Mário Meireles e condomínio homônimo.');
