@@ -9,5 +9,6 @@ for b in db:
   assert -2.54<b['lat']<-2.467 and -44.346<b['lng']<-44.244
   assert b['geo_ref'] and b['geo_provider']
 s=(root/'scripts/template.html').read_text().replace('__CATALOG__',json.dumps(db,ensure_ascii=False,separators=(',',':')))
+s=s.replace('__OSM_PLACES__',json.dumps(json.loads((root/'data/osm-places.json').read_text())['elements'],ensure_ascii=False,separators=(',',':')))
 (root/'index.html').write_text(s)
 print('Cadastro:',len(db),'coordenadas:',sum(b['lat'] is not None for b in db))

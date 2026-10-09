@@ -1,0 +1,3196 @@
+{
+  "snapshot": "2026-05-31T22:37:44Z",
+  "elements": [
+    {
+      "lat": -2.498906,
+      "lng": -44.2847694,
+      "tags": {
+        "name": "Bob's"
+      },
+      "type": "node",
+      "id": 976249094
+    },
+    {
+      "lat": -2.4907819,
+      "lng": -44.2973444,
+      "tags": {
+        "name": "Sushi Bar"
+      },
+      "type": "node",
+      "id": 1152906701
+    },
+    {
+      "lat": -2.4889595,
+      "lng": -44.3015049,
+      "tags": {
+        "name": "Ponta Sao Marcos"
+      },
+      "type": "node",
+      "id": 1181447040
+    },
+    {
+      "lat": -2.4877929,
+      "lng": -44.2978084,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:street": "Rua João Pereira Damasceno",
+        "name": "Hotel Luzeiros"
+      },
+      "type": "node",
+      "id": 1652352577
+    },
+    {
+      "lat": -2.4890468,
+      "lng": -44.2986141,
+      "tags": {
+        "addr:housenumber": "24",
+        "addr:street": "Rua João Pereira Damasceno",
+        "name": "Cabana do Sol - Ponta do Farol"
+      },
+      "type": "node",
+      "id": 4303407495
+    },
+    {
+      "lat": -2.4925981,
+      "lng": -44.2966819,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "Rua dos Gaviões",
+        "name": "Tasquinha Ferreiro"
+      },
+      "type": "node",
+      "id": 4305205989
+    },
+    {
+      "lat": -2.4915535,
+      "lng": -44.2957413,
+      "tags": {
+        "name": "Madeleine Casa de Pães"
+      },
+      "type": "node",
+      "id": 4305205990
+    },
+    {
+      "lat": -2.4925493,
+      "lng": -44.2961631,
+      "tags": {
+        "name": "Ferreiro Grill"
+      },
+      "type": "node",
+      "id": 4305206089
+    },
+    {
+      "lat": -2.4887404,
+      "lng": -44.2977321,
+      "tags": {
+        "name": "Pizzaria Vignoli"
+      },
+      "type": "node",
+      "id": 4307287089
+    },
+    {
+      "lat": -2.4931698,
+      "lng": -44.2984994,
+      "tags": {
+        "name": "Churrascaria Passo Fundo"
+      },
+      "type": "node",
+      "id": 4313081052
+    },
+    {
+      "lat": -2.4909784,
+      "lng": -44.3036295,
+      "tags": {
+        "name": "Pizzaria Expression"
+      },
+      "type": "node",
+      "id": 4313081053
+    },
+    {
+      "lat": -2.5081417,
+      "lng": -44.3031319,
+      "tags": {
+        "name": "BR"
+      },
+      "type": "node",
+      "id": 4313081076
+    },
+    {
+      "lat": -2.4910502,
+      "lng": -44.3036979,
+      "tags": {
+        "name": "Hotel Premier"
+      },
+      "type": "node",
+      "id": 4313356335
+    },
+    {
+      "lat": -2.4907926,
+      "lng": -44.2982617,
+      "tags": {
+        "addr:street": "Rua do Maçarico",
+        "name": "Gaia Restaurante"
+      },
+      "type": "node",
+      "id": 4663668698
+    },
+    {
+      "lat": -2.4982501,
+      "lng": -44.2833632,
+      "tags": {
+        "name": "Pizza Hut"
+      },
+      "type": "node",
+      "id": 5150085640
+    },
+    {
+      "lat": -2.4998553,
+      "lng": -44.2867648,
+      "tags": {
+        "name": "Dom Bosco/UNDB"
+      },
+      "type": "node",
+      "id": 5150462391
+    },
+    {
+      "lat": -2.5007588,
+      "lng": -44.2928864,
+      "tags": {
+        "name": "Clube da Barba"
+      },
+      "type": "node",
+      "id": 5150826134
+    },
+    {
+      "lat": -2.4883168,
+      "lng": -44.2911765,
+      "tags": {
+        "name": "Barraca do Chef"
+      },
+      "type": "node",
+      "id": 5153848476
+    },
+    {
+      "lat": -2.4883343,
+      "lng": -44.291082,
+      "tags": {
+        "name": "Desfrut Praia"
+      },
+      "type": "node",
+      "id": 5153848477
+    },
+    {
+      "lat": -2.4884859,
+      "lng": -44.2901342,
+      "tags": {
+        "name": "Casa da Peixada"
+      },
+      "type": "node",
+      "id": 5153848478
+    },
+    {
+      "lat": -2.4885022,
+      "lng": -44.2899988,
+      "tags": {
+        "name": "Bar Estrela Dalva"
+      },
+      "type": "node",
+      "id": 5153848479
+    },
+    {
+      "lat": -2.4886483,
+      "lng": -44.2890721,
+      "tags": {
+        "name": "Oásis Beach"
+      },
+      "type": "node",
+      "id": 5153848480
+    },
+    {
+      "lat": -2.4886663,
+      "lng": -44.2889416,
+      "tags": {
+        "name": "Sonora Beach"
+      },
+      "type": "node",
+      "id": 5153848481
+    },
+    {
+      "lat": -2.4887488,
+      "lng": -44.2880484,
+      "tags": {
+        "name": "L'apero"
+      },
+      "type": "node",
+      "id": 5153848482
+    },
+    {
+      "lat": -2.4887571,
+      "lng": -44.2879003,
+      "tags": {
+        "name": "Barraca da Marcela"
+      },
+      "type": "node",
+      "id": 5153848483
+    },
+    {
+      "lat": -2.4886831,
+      "lng": -44.287142,
+      "tags": {
+        "name": "Porto Seguro II"
+      },
+      "type": "node",
+      "id": 5153848484
+    },
+    {
+      "lat": -2.4884957,
+      "lng": -44.2854672,
+      "tags": {
+        "name": "Estrela do Mar"
+      },
+      "type": "node",
+      "id": 5153859874
+    },
+    {
+      "lat": -2.4887932,
+      "lng": -44.2801628,
+      "tags": {
+        "name": "Casa das Dunas"
+      },
+      "type": "node",
+      "id": 5153868063
+    },
+    {
+      "lat": -2.4926083,
+      "lng": -44.3045361,
+      "tags": {
+        "name": "Shell"
+      },
+      "type": "node",
+      "id": 5158170445
+    },
+    {
+      "lat": -2.4980384,
+      "lng": -44.2881349,
+      "tags": {
+        "name": "Extrafarma"
+      },
+      "type": "node",
+      "id": 5164110811
+    },
+    {
+      "lat": -2.4979752,
+      "lng": -44.2887363,
+      "tags": {
+        "name": "Mundo de Coisas"
+      },
+      "type": "node",
+      "id": 5164110812
+    },
+    {
+      "lat": -2.497989,
+      "lng": -44.2887578,
+      "tags": {
+        "name": "Mundo de Coisas"
+      },
+      "type": "node",
+      "id": 5164110813
+    },
+    {
+      "lat": -2.5019066,
+      "lng": -44.2921956,
+      "tags": {
+        "name": "Banco24Horas"
+      },
+      "type": "node",
+      "id": 5164113710
+    },
+    {
+      "lat": -2.5055131,
+      "lng": -44.316733,
+      "tags": {
+        "name": "Iate Clube"
+      },
+      "type": "node",
+      "id": 5175279255
+    },
+    {
+      "lat": -2.5002309,
+      "lng": -44.3068742,
+      "tags": {
+        "name": "Borracharia"
+      },
+      "type": "node",
+      "id": 5175279264
+    },
+    {
+      "lat": -2.4903937,
+      "lng": -44.2984576,
+      "tags": {
+        "name": "Autier"
+      },
+      "type": "node",
+      "id": 5177287407
+    },
+    {
+      "lat": -2.507222,
+      "lng": -44.2835613,
+      "tags": {
+        "name": "Chevrolet"
+      },
+      "type": "node",
+      "id": 5189422104
+    },
+    {
+      "lat": -2.49302,
+      "lng": -44.2883688,
+      "tags": {
+        "name": "Banco do Brasil"
+      },
+      "type": "node",
+      "id": 5218712239
+    },
+    {
+      "lat": -2.4926908,
+      "lng": -44.3044904,
+      "tags": {
+        "name": "Banco do Brasil"
+      },
+      "type": "node",
+      "id": 5218712246
+    },
+    {
+      "lat": -2.4908542,
+      "lng": -44.3034057,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:street": "Avenida dos Holandeses, Ed. Tech Office, Sala 401",
+        "name": "Ambiental Consultoria e Assessoria LTDA"
+      },
+      "type": "node",
+      "id": 5220016991
+    },
+    {
+      "lat": -2.4930618,
+      "lng": -44.2940376,
+      "tags": {
+        "name": "Italiana da Gema"
+      },
+      "type": "node",
+      "id": 5223340749
+    },
+    {
+      "lat": -2.5048202,
+      "lng": -44.3167483,
+      "tags": {
+        "name": "Capelinha da Ponta D'Areia"
+      },
+      "type": "node",
+      "id": 5300825652
+    },
+    {
+      "lat": -2.4971041,
+      "lng": -44.2947815,
+      "tags": {
+        "name": "Concha Acústica da Lagoa da Jansen"
+      },
+      "type": "node",
+      "id": 5302118092
+    },
+    {
+      "lat": -2.5031781,
+      "lng": -44.2942415,
+      "tags": {
+        "name": "Secretaria Municipal de Meio Ambiente de São Luís"
+      },
+      "type": "node",
+      "id": 5443192425
+    },
+    {
+      "lat": -2.4964978,
+      "lng": -44.298247,
+      "tags": {
+        "name": "Mirante da Lagoa"
+      },
+      "type": "node",
+      "id": 5448174088
+    },
+    {
+      "lat": -2.5079422,
+      "lng": -44.3015091,
+      "tags": {
+        "name": "Banco24Horas"
+      },
+      "type": "node",
+      "id": 5528746712
+    },
+    {
+      "lat": -2.4988174,
+      "lng": -44.2881656,
+      "tags": {
+        "name": "Extrafarma"
+      },
+      "type": "node",
+      "id": 5592740962
+    },
+    {
+      "lat": -2.5010053,
+      "lng": -44.2862522,
+      "tags": {
+        "name": "Extrafarma"
+      },
+      "type": "node",
+      "id": 5592740965
+    },
+    {
+      "lat": -2.5094452,
+      "lng": -44.2996281,
+      "tags": {
+        "name": "Instituto de Reomatologia"
+      },
+      "type": "node",
+      "id": 5739072521
+    },
+    {
+      "lat": -2.4877381,
+      "lng": -44.2978705,
+      "tags": {
+        "name": "Estação Saúde Hotel Luzeiros"
+      },
+      "type": "node",
+      "id": 5755008531
+    },
+    {
+      "lat": -2.4876455,
+      "lng": -44.2967744,
+      "tags": {
+        "name": "Casa de Apoio Ninar"
+      },
+      "type": "node",
+      "id": 5759397922
+    },
+    {
+      "lat": -2.5073949,
+      "lng": -44.295966,
+      "tags": {
+        "name": "Instituto de Reumatologia"
+      },
+      "type": "node",
+      "id": 5829799815
+    },
+    {
+      "lat": -2.4998705,
+      "lng": -44.312305,
+      "tags": {
+        "name": "Bistrô Quintalão"
+      },
+      "type": "node",
+      "id": 6020811574
+    },
+    {
+      "lat": -2.5026988,
+      "lng": -44.3124696,
+      "tags": {
+        "name": "Fornalha"
+      },
+      "type": "node",
+      "id": 6025634781
+    },
+    {
+      "lat": -2.5026306,
+      "lng": -44.3125075,
+      "tags": {
+        "name": "Azeite e Sal Empório"
+      },
+      "type": "node",
+      "id": 6025634782
+    },
+    {
+      "lat": -2.5073766,
+      "lng": -44.3036811,
+      "tags": {
+        "name": "Edu Peças e Serviços"
+      },
+      "type": "node",
+      "id": 6163890745
+    },
+    {
+      "lat": -2.5017458,
+      "lng": -44.2860114,
+      "tags": {
+        "name": "Correios"
+      },
+      "type": "node",
+      "id": 6610260002
+    },
+    {
+      "lat": -2.4926487,
+      "lng": -44.3044467,
+      "tags": {
+        "name": "Shell Select"
+      },
+      "type": "node",
+      "id": 6620579388
+    },
+    {
+      "lat": -2.4991602,
+      "lng": -44.2885992,
+      "tags": {
+        "addr:street": "Rua Professor Pinho Rodrigues",
+        "name": "Árvore da Vida vegetariano"
+      },
+      "type": "node",
+      "id": 6676206186
+    },
+    {
+      "lat": -2.501518,
+      "lng": -44.2910367,
+      "tags": {
+        "addr:housenumber": "sala 607",
+        "addr:street": "rua dos azulões, Ed. Office Tower",
+        "name": "GASMAR"
+      },
+      "type": "node",
+      "id": 6677702256
+    },
+    {
+      "lat": -2.5060052,
+      "lng": -44.2936155,
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:street": "Rua das Jaqueiras",
+        "name": "Espaço Fit"
+      },
+      "type": "node",
+      "id": 6893834492
+    },
+    {
+      "lat": -2.5060092,
+      "lng": -44.2936356,
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:street": "Rua das Jaqueiras",
+        "name": "Laís Freitas - Fisioterapia Pélvica"
+      },
+      "type": "node",
+      "id": 6893834493
+    },
+    {
+      "lat": -2.4998754,
+      "lng": -44.3125831,
+      "tags": {
+        "name": "Ferreiro Praia"
+      },
+      "type": "node",
+      "id": 7064290521
+    },
+    {
+      "lat": -2.5025763,
+      "lng": -44.2927808,
+      "tags": {
+        "name": "Bonsai do Riba"
+      },
+      "type": "node",
+      "id": 7101470586
+    },
+    {
+      "lat": -2.4881495,
+      "lng": -44.2798019,
+      "tags": {
+        "name": "Del Mare Bar e Restaurante"
+      },
+      "type": "node",
+      "id": 7113139293
+    },
+    {
+      "lat": -2.4881638,
+      "lng": -44.2787106,
+      "tags": {
+        "name": "Bar Rio 40 Graus"
+      },
+      "type": "node",
+      "id": 7113139294
+    },
+    {
+      "lat": -2.4881734,
+      "lng": -44.2819309,
+      "tags": {
+        "name": "Base da Lenoca"
+      },
+      "type": "node",
+      "id": 7113139296
+    },
+    {
+      "lat": -2.501606,
+      "lng": -44.2914363,
+      "tags": {
+        "name": "Lotérica Pedra do Sol"
+      },
+      "type": "node",
+      "id": 7134007158
+    },
+    {
+      "lat": -2.5039083,
+      "lng": -44.2956681,
+      "tags": {
+        "name": "Hostel cazumba"
+      },
+      "type": "node",
+      "id": 7181973686
+    },
+    {
+      "lat": -2.5046223,
+      "lng": -44.2961897,
+      "tags": {
+        "name": "Hostel cazumba"
+      },
+      "type": "node",
+      "id": 7181974685
+    },
+    {
+      "lat": -2.487992,
+      "lng": -44.2801847,
+      "tags": {
+        "name": "Praia de São Marcos"
+      },
+      "type": "node",
+      "id": 7700339994
+    },
+    {
+      "lat": -2.4969085,
+      "lng": -44.3086571,
+      "tags": {
+        "name": "Praia da Ponta d'Areia"
+      },
+      "type": "node",
+      "id": 7700339995
+    },
+    {
+      "lat": -2.5071071,
+      "lng": -44.2833697,
+      "tags": {
+        "name": "Kia"
+      },
+      "type": "node",
+      "id": 8147883506
+    },
+    {
+      "lat": -2.4881557,
+      "lng": -44.2788278,
+      "tags": {
+        "name": "Bar Maré Mansa"
+      },
+      "type": "node",
+      "id": 8288169115
+    },
+    {
+      "lat": -2.4881507,
+      "lng": -44.2796866,
+      "tags": {
+        "name": "Biana Bistrô"
+      },
+      "type": "node",
+      "id": 8288176934
+    },
+    {
+      "lat": -2.4881599,
+      "lng": -44.2807685,
+      "tags": {
+        "name": "Bar Kallamazoo"
+      },
+      "type": "node",
+      "id": 8288176942
+    },
+    {
+      "lat": -2.4881631,
+      "lng": -44.2808875,
+      "tags": {
+        "name": "Bar e Restaurante Farol"
+      },
+      "type": "node",
+      "id": 8288176943
+    },
+    {
+      "lat": -2.4881722,
+      "lng": -44.2820572,
+      "tags": {
+        "name": "Restaurante Jacira"
+      },
+      "type": "node",
+      "id": 8288176950
+    },
+    {
+      "lat": -2.4883589,
+      "lng": -44.2841992,
+      "tags": {
+        "name": "Restaurante da Santinha"
+      },
+      "type": "node",
+      "id": 8288176957
+    },
+    {
+      "lat": -2.488237,
+      "lng": -44.2830127,
+      "tags": {
+        "name": "Restaurante Alô Alô Marciano"
+      },
+      "type": "node",
+      "id": 8288176964
+    },
+    {
+      "lat": -2.488242,
+      "lng": -44.2831621,
+      "tags": {
+        "name": "Bar e Restaurante Orla Beach"
+      },
+      "type": "node",
+      "id": 8288176965
+    },
+    {
+      "lat": -2.488483,
+      "lng": -44.2853231,
+      "tags": {
+        "name": "Comidinhas Praia"
+      },
+      "type": "node",
+      "id": 8288176972
+    },
+    {
+      "lat": -2.4882429,
+      "lng": -44.2928089,
+      "tags": {
+        "name": "Os Três Pescadores"
+      },
+      "type": "node",
+      "id": 8288176985
+    },
+    {
+      "lat": -2.4886728,
+      "lng": -44.2870072,
+      "tags": {
+        "name": "Bar e Restaurante Garrafão"
+      },
+      "type": "node",
+      "id": 8288176993
+    },
+    {
+      "lat": -2.4999456,
+      "lng": -44.3125248,
+      "tags": {
+        "name": "Diverno Gelato"
+      },
+      "type": "node",
+      "id": 8316921550
+    },
+    {
+      "lat": -2.4991676,
+      "lng": -44.3116141,
+      "tags": {
+        "name": "Duque"
+      },
+      "type": "node",
+      "id": 8316921551
+    },
+    {
+      "lat": -2.5013898,
+      "lng": -44.2876342,
+      "tags": {
+        "addr:housenumber": "400",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Gringa Makes"
+      },
+      "type": "node",
+      "id": 8413084496
+    },
+    {
+      "lat": -2.5012494,
+      "lng": -44.2873531,
+      "tags": {
+        "name": "Gring Makes"
+      },
+      "type": "node",
+      "id": 8413111117
+    },
+    {
+      "lat": -2.4927811,
+      "lng": -44.2852658,
+      "tags": {
+        "name": "Ibis"
+      },
+      "type": "node",
+      "id": 8567810033
+    },
+    {
+      "lat": -2.5014387,
+      "lng": -44.2875157,
+      "tags": {
+        "addr:housenumber": "400",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Smart Odonto Tropical Shopping"
+      },
+      "type": "node",
+      "id": 8761730388
+    },
+    {
+      "lat": -2.5039318,
+      "lng": -44.2954207,
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:street": "Rua das Andirobas",
+        "name": "Clayton Farias Fotografia"
+      },
+      "type": "node",
+      "id": 9053475242
+    },
+    {
+      "lat": -2.5061553,
+      "lng": -44.3086673,
+      "tags": {
+        "name": "Escola E Jardim De Infancia O Caminho Do Saber"
+      },
+      "type": "node",
+      "id": 9347737445
+    },
+    {
+      "lat": -2.5083017,
+      "lng": -44.2944999,
+      "tags": {
+        "name": "Centro De Ensino Renascenca"
+      },
+      "type": "node",
+      "id": 9347743330
+    },
+    {
+      "lat": -2.5056488,
+      "lng": -44.3087451,
+      "tags": {
+        "name": "Escola Balancando Sonhos"
+      },
+      "type": "node",
+      "id": 9347749602
+    },
+    {
+      "lat": -2.5088966,
+      "lng": -44.3020584,
+      "tags": {
+        "name": "Instituto De Ensino Vivendo Em Cristo"
+      },
+      "type": "node",
+      "id": 9347749603
+    },
+    {
+      "lat": -2.492958,
+      "lng": -44.303893,
+      "tags": {
+        "name": "Centro Educacional E Comunitario Escola Do Abc"
+      },
+      "type": "node",
+      "id": 9347750932
+    },
+    {
+      "lat": -2.5059891,
+      "lng": -44.3071143,
+      "tags": {
+        "name": "Unidade Escolar Joao Pereira Martins"
+      },
+      "type": "node",
+      "id": 9347751391
+    },
+    {
+      "lat": -2.5060561,
+      "lng": -44.3061353,
+      "tags": {
+        "name": "Motel Lagoa"
+      },
+      "type": "node",
+      "id": 9347751392
+    },
+    {
+      "lat": -2.498026,
+      "lng": -44.2881338,
+      "tags": {
+        "name": "Banco24Horas"
+      },
+      "type": "node",
+      "id": 9712369931
+    },
+    {
+      "lat": -2.4911098,
+      "lng": -44.2992548,
+      "tags": {
+        "name": "Setagraf Gráfica e Editora"
+      },
+      "type": "node",
+      "id": 9805401429
+    },
+    {
+      "lat": -2.499641,
+      "lng": -44.2886321,
+      "tags": {
+        "addr:housenumber": "12",
+        "addr:street": "Rua Quéopes",
+        "name": "Semente Coworking"
+      },
+      "type": "node",
+      "id": 9881921483
+    },
+    {
+      "lat": -2.5010998,
+      "lng": -44.3103937,
+      "tags": {
+        "addr:street": "Rua dos Junquilhos",
+        "name": "Casa7"
+      },
+      "type": "node",
+      "id": 10781800647
+    },
+    {
+      "lat": -2.4993953,
+      "lng": -44.3119724,
+      "tags": {
+        "name": "Azeite e Sal Praia"
+      },
+      "type": "node",
+      "id": 10790388631
+    },
+    {
+      "lat": -2.5010973,
+      "lng": -44.2861488,
+      "tags": {
+        "name": "Advocacia Geral da União - AGU"
+      },
+      "type": "node",
+      "id": 10817734060
+    },
+    {
+      "lat": -2.4928892,
+      "lng": -44.2859793,
+      "tags": {
+        "addr:housenumber": "14",
+        "addr:street": "Avenida dos Holandeses",
+        "name": "Consultório de Psiquiatria Caio Neuenschwander"
+      },
+      "type": "node",
+      "id": 10865780009
+    },
+    {
+      "lat": -2.5004815,
+      "lng": -44.2911532,
+      "tags": {
+        "name": "Oriental"
+      },
+      "type": "node",
+      "id": 11417125679
+    },
+    {
+      "lat": -2.4991477,
+      "lng": -44.288745,
+      "tags": {
+        "name": "edifício Manhattan"
+      },
+      "type": "node",
+      "id": 11544116746
+    },
+    {
+      "lat": -2.5046655,
+      "lng": -44.2960268,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:street": "Rua das Sucupiras",
+        "name": "Elo Fiber"
+      },
+      "type": "node",
+      "id": 11877161106
+    },
+    {
+      "lat": -2.5055368,
+      "lng": -44.2962147,
+      "tags": {
+        "addr:housenumber": "17",
+        "addr:street": "Rua das Juçaras",
+        "name": "Almeida, Teixeira & Advogados Associados"
+      },
+      "type": "node",
+      "id": 11998706766
+    },
+    {
+      "lat": -2.4883363,
+      "lng": -44.2980942,
+      "tags": {
+        "name": "Beer Comigo"
+      },
+      "type": "node",
+      "id": 13289860501
+    },
+    {
+      "lat": -2.4907869,
+      "lng": -44.3052235,
+      "tags": {
+        "name": "Hops Beer Brew Pub"
+      },
+      "type": "node",
+      "id": 13304714701
+    },
+    {
+      "lat": -2.490795,
+      "lng": -44.3051939,
+      "tags": {
+        "name": "Bodega19"
+      },
+      "type": "node",
+      "id": 13382201832
+    },
+    {
+      "lat": -2.4908185,
+      "lng": -44.3051543,
+      "tags": {
+        "name": "BM Personal Studio"
+      },
+      "type": "node",
+      "id": 13382201833
+    },
+    {
+      "lat": -2.4959983,
+      "lng": -44.3016668,
+      "tags": {
+        "name": "Serpente da Lagoa da Jansen"
+      },
+      "type": "node",
+      "id": 13843175122
+    },
+    {
+      "lat": -2.4962812,
+      "lng": -44.3072617,
+      "tags": {
+        "addr:housenumber": "87",
+        "addr:street": "Avenida dos Holandeses",
+        "name": "Wcarnes"
+      },
+      "type": "node",
+      "id": 13843175123
+    },
+    {
+      "lat": -2.4996314,
+      "lng": -44.3122988,
+      "tags": {
+        "addr:street": "Avenida Ivan Loureiro",
+        "name": "Zé Pereira Café"
+      },
+      "type": "node",
+      "id": 13843175134
+    },
+    {
+      "lat": -2.49929,
+      "lng": -44.3118182,
+      "tags": {
+        "addr:housenumber": "04",
+        "addr:street": "Avenida Ivan Loureiro",
+        "name": "Numar"
+      },
+      "type": "node",
+      "id": 13843175135
+    },
+    {
+      "lat": -2.5073534,
+      "lng": -44.3029759,
+      "tags": {
+        "name": "Zoopatinhas Petshop"
+      },
+      "type": "node",
+      "id": 13866442247
+    },
+    {
+      "lat": -2.4988965,
+      "lng": -44.2999043,
+      "tags": {
+        "name": "Lagoa da Jansen"
+      },
+      "type": "way",
+      "id": 137475443
+    },
+    {
+      "lat": -2.4988497,
+      "lng": -44.283598,
+      "tags": {
+        "name": "Bradesco"
+      },
+      "type": "way",
+      "id": 298872714
+    },
+    {
+      "lat": -2.5066598,
+      "lng": -44.2839994,
+      "tags": {
+        "name": "Jaracati Shopping"
+      },
+      "type": "way",
+      "id": 377216753
+    },
+    {
+      "lat": -2.5027413,
+      "lng": -44.2926835,
+      "tags": {
+        "name": "Atlanta Center"
+      },
+      "type": "way",
+      "id": 377217933
+    },
+    {
+      "lat": -2.4922847,
+      "lng": -44.2889259,
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:street": "Avenida dos Holandeses",
+        "name": "Associação Atlética Banco do Brasil",
+        "short_name": "AABB"
+      },
+      "type": "way",
+      "id": 432811201
+    },
+    {
+      "lat": -2.5005222,
+      "lng": -44.2833189,
+      "tags": {
+        "name": "Espaço Renascença"
+      },
+      "type": "way",
+      "id": 442095782
+    },
+    {
+      "lat": -2.5011914,
+      "lng": -44.2838501,
+      "tags": {
+        "addr:housenumber": "20",
+        "addr:street": "Rua Carutapera",
+        "name": "Edifício Mozart"
+      },
+      "type": "way",
+      "id": 442096777
+    },
+    {
+      "lat": -2.4897476,
+      "lng": -44.2980745,
+      "tags": {
+        "addr:housenumber": "18",
+        "addr:street": "Rua João Danasceno",
+        "name": "Restaurante Frango Bom"
+      },
+      "type": "way",
+      "id": 507178794
+    },
+    {
+      "lat": -2.4883485,
+      "lng": -44.2973403,
+      "tags": {
+        "name": "Pousada Farol da Praia"
+      },
+      "type": "way",
+      "id": 507178796
+    },
+    {
+      "lat": -2.4908402,
+      "lng": -44.3023561,
+      "tags": {
+        "addr:street": "Avenida dos Holandeses",
+        "name": "Empório Fribal"
+      },
+      "type": "way",
+      "id": 507180888
+    },
+    {
+      "lat": -2.4897956,
+      "lng": -44.3008917,
+      "tags": {
+        "name": "Posto São Marcos"
+      },
+      "type": "way",
+      "id": 507180891
+    },
+    {
+      "lat": -2.4964275,
+      "lng": -44.2926507,
+      "tags": {
+        "name": "Praça da Lagoa da Jansen"
+      },
+      "type": "way",
+      "id": 529825632
+    },
+    {
+      "lat": -2.50155,
+      "lng": -44.2912176,
+      "tags": {
+        "name": "Office Tower"
+      },
+      "type": "way",
+      "id": 530433594
+    },
+    {
+      "lat": -2.5018666,
+      "lng": -44.2916669,
+      "tags": {
+        "name": "Edifício Planta Tower"
+      },
+      "type": "way",
+      "id": 530433595
+    },
+    {
+      "lat": -2.5036639,
+      "lng": -44.2934885,
+      "tags": {
+        "name": "Profissionalle Hotel São Luís"
+      },
+      "type": "way",
+      "id": 530433597
+    },
+    {
+      "lat": -2.5033577,
+      "lng": -44.293094,
+      "tags": {
+        "name": "Banco do Brasil"
+      },
+      "type": "way",
+      "id": 530433598
+    },
+    {
+      "lat": -2.5009496,
+      "lng": -44.2921452,
+      "tags": {
+        "name": "SEDES"
+      },
+      "type": "way",
+      "id": 530433599
+    },
+    {
+      "lat": -2.5027517,
+      "lng": -44.2906388,
+      "tags": {
+        "name": "Armazém Paraíba"
+      },
+      "type": "way",
+      "id": 530433790
+    },
+    {
+      "lat": -2.4957879,
+      "lng": -44.2942131,
+      "tags": {
+        "name": "Arena Domingos Leal"
+      },
+      "type": "way",
+      "id": 531221459
+    },
+    {
+      "lat": -2.5038288,
+      "lng": -44.2884478,
+      "tags": {
+        "name": "Hiper Mateus"
+      },
+      "type": "way",
+      "id": 531264781
+    },
+    {
+      "lat": -2.5016843,
+      "lng": -44.2886428,
+      "tags": {
+        "name": "Monumental Shopping"
+      },
+      "type": "way",
+      "id": 531264783
+    },
+    {
+      "lat": -2.5033504,
+      "lng": -44.294048,
+      "tags": {
+        "name": "Executive Lake Center"
+      },
+      "type": "way",
+      "id": 531518499
+    },
+    {
+      "lat": -2.5019398,
+      "lng": -44.2921902,
+      "tags": {
+        "name": "Pappis"
+      },
+      "type": "way",
+      "id": 532092933
+    },
+    {
+      "lat": -2.5037444,
+      "lng": -44.2853738,
+      "tags": {
+        "addr:street": "Rua Anapurus",
+        "name": "Universidade Ceuma - Campus Renascença"
+      },
+      "type": "way",
+      "id": 533398538
+    },
+    {
+      "lat": -2.5001895,
+      "lng": -44.3070824,
+      "tags": {
+        "name": "BR"
+      },
+      "type": "way",
+      "id": 533447302
+    },
+    {
+      "lat": -2.4994282,
+      "lng": -44.3088764,
+      "tags": {
+        "name": "Hotel Praia Ponta D'Areia"
+      },
+      "type": "way",
+      "id": 533447319
+    },
+    {
+      "lat": -2.499116,
+      "lng": -44.3081114,
+      "tags": {
+        "name": "Hotel Veleiros"
+      },
+      "type": "way",
+      "id": 533447321
+    },
+    {
+      "lat": -2.4996629,
+      "lng": -44.3092064,
+      "tags": {
+        "name": "Empório Fribal"
+      },
+      "type": "way",
+      "id": 533447324
+    },
+    {
+      "lat": -2.5041648,
+      "lng": -44.318138,
+      "tags": {
+        "name": "Praça do Espigão"
+      },
+      "type": "way",
+      "id": 533447329
+    },
+    {
+      "lat": -2.4914015,
+      "lng": -44.2955103,
+      "tags": {
+        "name": "Kibe & Cia"
+      },
+      "type": "way",
+      "id": 535594660
+    },
+    {
+      "lat": -2.5008496,
+      "lng": -44.2905128,
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Versatille - Torre Norte"
+      },
+      "type": "way",
+      "id": 537035189
+    },
+    {
+      "lat": -2.5012749,
+      "lng": -44.2904757,
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Versatille - Torre Sul"
+      },
+      "type": "way",
+      "id": 537035190
+    },
+    {
+      "lat": -2.5078007,
+      "lng": -44.2846864,
+      "tags": {
+        "name": "Shell"
+      },
+      "type": "way",
+      "id": 537265230
+    },
+    {
+      "lat": -2.4989568,
+      "lng": -44.2905708,
+      "tags": {
+        "name": "Malagueta Restaurante"
+      },
+      "type": "way",
+      "id": 539250985
+    },
+    {
+      "lat": -2.4916888,
+      "lng": -44.2784722,
+      "tags": {
+        "name": "Igreja de São Luís Rei de França"
+      },
+      "type": "way",
+      "id": 539250997
+    },
+    {
+      "lat": -2.4990491,
+      "lng": -44.3072496,
+      "tags": {
+        "name": "CPTUR - Polícia Militar"
+      },
+      "type": "way",
+      "id": 539297569
+    },
+    {
+      "lat": -2.4920803,
+      "lng": -44.2929782,
+      "tags": {
+        "name": "Posto BR"
+      },
+      "type": "way",
+      "id": 539297572
+    },
+    {
+      "lat": -2.4949913,
+      "lng": -44.2793482,
+      "tags": {
+        "name": "Comando Geral da Policía Militar do Maranhão"
+      },
+      "type": "way",
+      "id": 539300752
+    },
+    {
+      "lat": -2.4965296,
+      "lng": -44.2794824,
+      "tags": {
+        "name": "Grupo Tático Aéreo"
+      },
+      "type": "way",
+      "id": 539300753
+    },
+    {
+      "lat": -2.4998304,
+      "lng": -44.3078291,
+      "tags": {
+        "name": "Lagoa Corporate"
+      },
+      "type": "way",
+      "id": 539300754
+    },
+    {
+      "lat": -2.4933383,
+      "lng": -44.2979356,
+      "tags": {
+        "name": "Area de Lazer e Ginástica da Lagoa"
+      },
+      "type": "way",
+      "id": 559570043
+    },
+    {
+      "lat": -2.5014669,
+      "lng": -44.2913985,
+      "tags": {
+        "name": "Office Tower"
+      },
+      "type": "way",
+      "id": 563180106
+    },
+    {
+      "lat": -2.4908893,
+      "lng": -44.3030588,
+      "tags": {
+        "name": "Tech Office"
+      },
+      "type": "way",
+      "id": 563180431
+    },
+    {
+      "lat": -2.4985949,
+      "lng": -44.2847331,
+      "tags": {
+        "name": "Business Center Renascença"
+      },
+      "type": "way",
+      "id": 563180452
+    },
+    {
+      "lat": -2.4893824,
+      "lng": -44.2955501,
+      "tags": {
+        "name": "Two Towers"
+      },
+      "type": "way",
+      "id": 563180828
+    },
+    {
+      "lat": -2.5002458,
+      "lng": -44.282312,
+      "tags": {
+        "name": "Hospital Doutor Carlos Macieira"
+      },
+      "type": "way",
+      "id": 566469058
+    },
+    {
+      "lat": -2.4968449,
+      "lng": -44.2901701,
+      "tags": {
+        "name": "Condomínio Aspen"
+      },
+      "type": "way",
+      "id": 577616965
+    },
+    {
+      "lat": -2.4999117,
+      "lng": -44.2878441,
+      "tags": {
+        "name": "Ginásio Luís Pinho Rodriques"
+      },
+      "type": "way",
+      "id": 607951724
+    },
+    {
+      "lat": -2.5005779,
+      "lng": -44.2887203,
+      "tags": {
+        "name": "Ed São Luís Multiempresarial"
+      },
+      "type": "way",
+      "id": 607951727
+    },
+    {
+      "lat": -2.5006878,
+      "lng": -44.2891209,
+      "tags": {
+        "name": "Ed Renascença Medical Center"
+      },
+      "type": "way",
+      "id": 607951730
+    },
+    {
+      "lat": -2.4995847,
+      "lng": -44.2886247,
+      "tags": {
+        "addr:housenumber": "12",
+        "addr:street": "Rua Quéopes",
+        "name": "Condomínio Executive Center"
+      },
+      "type": "way",
+      "id": 607951735
+    },
+    {
+      "lat": -2.4993086,
+      "lng": -44.2887321,
+      "tags": {
+        "name": "Manhattan Center"
+      },
+      "type": "way",
+      "id": 607951738
+    },
+    {
+      "lat": -2.4985143,
+      "lng": -44.2846488,
+      "tags": {
+        "name": "Edifício Business Center Renascença"
+      },
+      "type": "way",
+      "id": 618024246
+    },
+    {
+      "lat": -2.4979632,
+      "lng": -44.283806,
+      "tags": {
+        "name": "Golden Tower"
+      },
+      "type": "way",
+      "id": 618024250
+    },
+    {
+      "lat": -2.4970931,
+      "lng": -44.2845504,
+      "tags": {
+        "name": "Edifício Cristal"
+      },
+      "type": "way",
+      "id": 618024251
+    },
+    {
+      "lat": -2.5021547,
+      "lng": -44.2862099,
+      "tags": {
+        "name": "Defensoria Pública da União no Maranhão"
+      },
+      "type": "way",
+      "id": 618024260
+    },
+    {
+      "lat": -2.5003915,
+      "lng": -44.2860734,
+      "tags": {
+        "name": "Banco do Brasil"
+      },
+      "type": "way",
+      "id": 618024273
+    },
+    {
+      "lat": -2.5003417,
+      "lng": -44.2858681,
+      "tags": {
+        "name": "Cantinho Doce"
+      },
+      "type": "way",
+      "id": 618024274
+    },
+    {
+      "lat": -2.5001552,
+      "lng": -44.2856508,
+      "tags": {
+        "name": "Itaú"
+      },
+      "type": "way",
+      "id": 618024275
+    },
+    {
+      "lat": -2.5001181,
+      "lng": -44.2853884,
+      "tags": {
+        "name": "Santander"
+      },
+      "type": "way",
+      "id": 618024276
+    },
+    {
+      "lat": -2.4915444,
+      "lng": -44.3031574,
+      "tags": {
+        "name": "Subestação São Marcos"
+      },
+      "type": "way",
+      "id": 620941865
+    },
+    {
+      "lat": -2.4989328,
+      "lng": -44.2859668,
+      "tags": {
+        "addr:housenumber": "477",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Reitoria do IFMA"
+      },
+      "type": "way",
+      "id": 633099939
+    },
+    {
+      "lat": -2.499334,
+      "lng": -44.2885833,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:street": "Rua Professor Luís Pinho Rodrigues",
+        "name": "Lara Araújo- Odontologia"
+      },
+      "type": "way",
+      "id": 634252556
+    },
+    {
+      "lat": -2.4965855,
+      "lng": -44.2845383,
+      "tags": {
+        "addr:street": "Avenida do Vale",
+        "name": "Educa Center"
+      },
+      "type": "way",
+      "id": 634252605
+    },
+    {
+      "lat": -2.4880769,
+      "lng": -44.2928561,
+      "tags": {
+        "addr:street": "Avenida Litorânea",
+        "name": "Praça dos Pescadores"
+      },
+      "type": "way",
+      "id": 681285319
+    },
+    {
+      "lat": -2.4909964,
+      "lng": -44.2940792,
+      "tags": {
+        "addr:street": "Avenida Litorânea",
+        "name": "Edifício Dionel Sousa Neto"
+      },
+      "type": "way",
+      "id": 681286427
+    },
+    {
+      "lat": -2.4903751,
+      "lng": -44.2937319,
+      "tags": {
+        "addr:street": "Avenida Litorânea",
+        "name": "Litorânea Beach Residence"
+      },
+      "type": "way",
+      "id": 681286578
+    },
+    {
+      "lat": -2.4968257,
+      "lng": -44.3073843,
+      "tags": {
+        "name": "Praça Gege Nagô"
+      },
+      "type": "way",
+      "id": 686949131
+    },
+    {
+      "lat": -2.5060836,
+      "lng": -44.2978999,
+      "tags": {
+        "name": "Condomínio Parque Renascença"
+      },
+      "type": "way",
+      "id": 696218163
+    },
+    {
+      "lat": -2.4997302,
+      "lng": -44.283442,
+      "tags": {
+        "addr:street": "Avenida Jerônimo de Albuquerque",
+        "name": "Correios"
+      },
+      "type": "way",
+      "id": 703968079
+    },
+    {
+      "lat": -2.5021236,
+      "lng": -44.2919039,
+      "tags": {
+        "name": "Posto Paloma"
+      },
+      "type": "way",
+      "id": 704905453
+    },
+    {
+      "lat": -2.5053697,
+      "lng": -44.3177912,
+      "tags": {
+        "name": "Forte Santo Antônio da Barra de São Luís"
+      },
+      "type": "way",
+      "id": 706440349
+    },
+    {
+      "lat": -2.5052829,
+      "lng": -44.3178668,
+      "tags": {
+        "name": "Forte Santo Antônio da Barra de São Luís"
+      },
+      "type": "way",
+      "id": 706440350
+    },
+    {
+      "lat": -2.505381,
+      "lng": -44.3177796,
+      "tags": {
+        "name": "Fosso do Forte Santo Antônio da Barra"
+      },
+      "type": "way",
+      "id": 706440351
+    },
+    {
+      "lat": -2.5053122,
+      "lng": -44.3177604,
+      "tags": {
+        "name": "Praça do Canhão"
+      },
+      "type": "way",
+      "id": 706440352
+    },
+    {
+      "lat": -2.4996155,
+      "lng": -44.2868466,
+      "tags": {
+        "addr:housenumber": "443",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "UNDB"
+      },
+      "type": "way",
+      "id": 734819397
+    },
+    {
+      "lat": -2.4997196,
+      "lng": -44.2876235,
+      "tags": {
+        "addr:housenumber": "443",
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Dom Bosco"
+      },
+      "type": "way",
+      "id": 734819398
+    },
+    {
+      "lat": -2.4975866,
+      "lng": -44.2863062,
+      "tags": {
+        "name": "Escola Crescimento"
+      },
+      "type": "way",
+      "id": 734819400
+    },
+    {
+      "lat": -2.4912876,
+      "lng": -44.3043089,
+      "tags": {
+        "name": "Subway"
+      },
+      "type": "way",
+      "id": 760181050
+    },
+    {
+      "lat": -2.4915009,
+      "lng": -44.304609,
+      "tags": {
+        "addr:street": "Avenida dos Holandeses",
+        "name": "Pague Menos"
+      },
+      "type": "way",
+      "id": 760181051
+    },
+    {
+      "lat": -2.4920285,
+      "lng": -44.3047461,
+      "tags": {
+        "name": "Extrafarma"
+      },
+      "type": "way",
+      "id": 760181052
+    },
+    {
+      "lat": -2.5060126,
+      "lng": -44.2843824,
+      "tags": {
+        "name": "Edifício Empresarial Jaracati"
+      },
+      "type": "way",
+      "id": 761341978
+    },
+    {
+      "lat": -2.5088713,
+      "lng": -44.3007029,
+      "tags": {
+        "name": "Mateus Food Service"
+      },
+      "type": "way",
+      "id": 761341985
+    },
+    {
+      "lat": -2.4956159,
+      "lng": -44.3075596,
+      "tags": {
+        "name": "Praça do Sol"
+      },
+      "type": "way",
+      "id": 761343674
+    },
+    {
+      "lat": -2.5034822,
+      "lng": -44.3165695,
+      "tags": {
+        "name": "Condomínio Salvador Dali"
+      },
+      "type": "way",
+      "id": 782213723
+    },
+    {
+      "lat": -2.4968138,
+      "lng": -44.2867893,
+      "tags": {
+        "name": "Praça Ruy Mesquita"
+      },
+      "type": "way",
+      "id": 804847283
+    },
+    {
+      "lat": -2.4946135,
+      "lng": -44.2884211,
+      "tags": {
+        "name": "Ecoponto"
+      },
+      "type": "way",
+      "id": 804847285
+    },
+    {
+      "lat": -2.4901722,
+      "lng": -44.281557,
+      "tags": {
+        "name": "Centro Social dos Servidores Públicos do Estado do Maranhão (Clube do IPEM)"
+      },
+      "type": "way",
+      "id": 807646354
+    },
+    {
+      "lat": -2.4967854,
+      "lng": -44.2797319,
+      "tags": {
+        "name": "Comando Geral da Policía Militar do Maranhão"
+      },
+      "type": "way",
+      "id": 807646357
+    },
+    {
+      "lat": -2.5013105,
+      "lng": -44.2821027,
+      "tags": {
+        "name": "Hospital dos Servidores Públicos do Maranhão"
+      },
+      "type": "way",
+      "id": 807646359
+    },
+    {
+      "lat": -2.4987136,
+      "lng": -44.2789423,
+      "tags": {
+        "name": "8º Batalhão de Polícia Militar do Maranhão"
+      },
+      "type": "way",
+      "id": 878781318
+    },
+    {
+      "lat": -2.4990009,
+      "lng": -44.2820326,
+      "tags": {
+        "name": "Academia de Polícia Militar Gonçalves Dias"
+      },
+      "type": "way",
+      "id": 878781319
+    },
+    {
+      "lat": -2.5001732,
+      "lng": -44.2833218,
+      "tags": {
+        "name": "Conselho Regional de Enfermagem do Maranhão - COREN/MA"
+      },
+      "type": "way",
+      "id": 878781320
+    },
+    {
+      "lat": -2.4998023,
+      "lng": -44.2832271,
+      "tags": {
+        "name": "Igreja Batista Renascença"
+      },
+      "type": "way",
+      "id": 878781321
+    },
+    {
+      "lat": -2.4991575,
+      "lng": -44.2854422,
+      "tags": {
+        "addr:street": "Rua dos Azulões",
+        "name": "Drogasil"
+      },
+      "type": "way",
+      "id": 878781324
+    },
+    {
+      "lat": -2.5088653,
+      "lng": -44.3028906,
+      "tags": {
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Fribal"
+      },
+      "type": "way",
+      "id": 878965047
+    },
+    {
+      "lat": -2.5078735,
+      "lng": -44.3034198,
+      "tags": {
+        "addr:street": "Avenida Ana Jansen",
+        "name": "Pague Menos"
+      },
+      "type": "way",
+      "id": 878965048
+    },
+    {
+      "lat": -2.5079923,
+      "lng": -44.3024695,
+      "tags": {
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Bradesco"
+      },
+      "type": "way",
+      "id": 878965049
+    },
+    {
+      "lat": -2.5082378,
+      "lng": -44.3011551,
+      "tags": {
+        "name": "Posto Renascença"
+      },
+      "type": "way",
+      "id": 878965050
+    },
+    {
+      "lat": -2.5078624,
+      "lng": -44.3014912,
+      "tags": {
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Extrafarma"
+      },
+      "type": "way",
+      "id": 878965051
+    },
+    {
+      "lat": -2.5027367,
+      "lng": -44.2856932,
+      "tags": {
+        "name": "Universidade Ceuma"
+      },
+      "type": "way",
+      "id": 880763404
+    },
+    {
+      "lat": -2.5046878,
+      "lng": -44.2868024,
+      "tags": {
+        "name": "Dubai Residence"
+      },
+      "type": "way",
+      "id": 880763405
+    },
+    {
+      "lat": -2.5032485,
+      "lng": -44.2872133,
+      "tags": {
+        "name": "Mont Blanc Flat Service"
+      },
+      "type": "way",
+      "id": 880763408
+    },
+    {
+      "lat": -2.5039355,
+      "lng": -44.2871857,
+      "tags": {
+        "name": "Edifício Bahrein"
+      },
+      "type": "way",
+      "id": 880763409
+    },
+    {
+      "lat": -2.5071022,
+      "lng": -44.3044249,
+      "tags": {
+        "addr:street": "Avenida Ana Jansen",
+        "name": "Banco do Brasil"
+      },
+      "type": "way",
+      "id": 889073166
+    },
+    {
+      "lat": -2.5072962,
+      "lng": -44.3038569,
+      "tags": {
+        "name": "Pneuaço"
+      },
+      "type": "way",
+      "id": 889073167
+    },
+    {
+      "lat": -2.5067176,
+      "lng": -44.303843,
+      "tags": {
+        "name": "Hotel Saint Louis"
+      },
+      "type": "way",
+      "id": 889073169
+    },
+    {
+      "lat": -2.5063068,
+      "lng": -44.3046859,
+      "tags": {
+        "name": "TV Mirante"
+      },
+      "type": "way",
+      "id": 889073170
+    },
+    {
+      "lat": -2.5044108,
+      "lng": -44.3049215,
+      "tags": {
+        "name": "Centro Empresarial Mendes Frota"
+      },
+      "type": "way",
+      "id": 889073172
+    },
+    {
+      "lat": -2.5032663,
+      "lng": -44.3044254,
+      "tags": {
+        "name": "Centro Comercial da Lagoa"
+      },
+      "type": "way",
+      "id": 889073173
+    },
+    {
+      "lat": -2.488841,
+      "lng": -44.2802626,
+      "tags": {
+        "name": "Casa das Dunas"
+      },
+      "type": "way",
+      "id": 891747652
+    },
+    {
+      "lat": -2.4889098,
+      "lng": -44.2863763,
+      "tags": {
+        "name": "Guaraná do JC"
+      },
+      "type": "way",
+      "id": 891747659
+    },
+    {
+      "lat": -2.5046035,
+      "lng": -44.312725,
+      "tags": {
+        "name": "Marina Ilha Boat"
+      },
+      "type": "way",
+      "id": 892683617
+    },
+    {
+      "lat": -2.5053088,
+      "lng": -44.2893622,
+      "tags": {
+        "name": "Centro Educacional Montessoriano Reino Infantil"
+      },
+      "type": "way",
+      "id": 906705978
+    },
+    {
+      "lat": -2.4926562,
+      "lng": -44.2854348,
+      "tags": {
+        "name": "Windows Mall"
+      },
+      "type": "way",
+      "id": 922954542
+    },
+    {
+      "lat": -2.4974189,
+      "lng": -44.2870055,
+      "tags": {
+        "addr:housenumber": "23",
+        "addr:street": "Avenida do Vale",
+        "name": "Maple Bear"
+      },
+      "type": "way",
+      "id": 938609830
+    },
+    {
+      "lat": -2.4952629,
+      "lng": -44.2929551,
+      "tags": {
+        "name": "Reserva Lagoa Residencial Clube"
+      },
+      "type": "way",
+      "id": 984541224
+    },
+    {
+      "lat": -2.4974644,
+      "lng": -44.2936234,
+      "tags": {
+        "name": "Condomínio Jardim Renascença"
+      },
+      "type": "way",
+      "id": 984541225
+    },
+    {
+      "lat": -2.5021875,
+      "lng": -44.2810139,
+      "tags": {
+        "name": "Rio Jaracati"
+      },
+      "type": "way",
+      "id": 1020416203
+    },
+    {
+      "lat": -2.5062399,
+      "lng": -44.2861898,
+      "tags": {
+        "name": "Rio Jaracati"
+      },
+      "type": "way",
+      "id": 1020416206
+    },
+    {
+      "lat": -2.5047443,
+      "lng": -44.2838941,
+      "tags": {
+        "name": "Rio Jaracati"
+      },
+      "type": "way",
+      "id": 1020416207
+    },
+    {
+      "lat": -2.5037776,
+      "lng": -44.2958068,
+      "tags": {
+        "name": "Condomínio Canopus"
+      },
+      "type": "way",
+      "id": 1074623239
+    },
+    {
+      "lat": -2.4925906,
+      "lng": -44.2874575,
+      "tags": {
+        "name": "Colégio Batista"
+      },
+      "type": "way",
+      "id": 1134329455
+    },
+    {
+      "lat": -2.4895423,
+      "lng": -44.303156,
+      "tags": {
+        "name": "Condomínio Farol da Ilha"
+      },
+      "type": "way",
+      "id": 1138939749
+    },
+    {
+      "lat": -2.4909329,
+      "lng": -44.3031247,
+      "tags": {
+        "name": "Edifício Tech Office"
+      },
+      "type": "way",
+      "id": 1138939750
+    },
+    {
+      "lat": -2.4913911,
+      "lng": -44.3035847,
+      "tags": {
+        "name": "Hotel Premier"
+      },
+      "type": "way",
+      "id": 1138939751
+    },
+    {
+      "lat": -2.4946648,
+      "lng": -44.3051148,
+      "tags": {
+        "name": "Hotel Stop Way"
+      },
+      "type": "way",
+      "id": 1138939752
+    },
+    {
+      "lat": -2.4996759,
+      "lng": -44.3077835,
+      "tags": {
+        "name": "Lagoa Corporate & Offices"
+      },
+      "type": "way",
+      "id": 1144959852
+    },
+    {
+      "lat": -2.5062247,
+      "lng": -44.2879892,
+      "tags": {
+        "name": "Defensoria Pública do Estado do Maranhão"
+      },
+      "type": "way",
+      "id": 1159535229
+    },
+    {
+      "lat": -2.4998472,
+      "lng": -44.3107317,
+      "tags": {
+        "name": "Edifício Aquamarine"
+      },
+      "type": "way",
+      "id": 1159574449
+    },
+    {
+      "lat": -2.4972595,
+      "lng": -44.3077347,
+      "tags": {
+        "name": "Lakeside Condomínio Verde"
+      },
+      "type": "way",
+      "id": 1159576804
+    },
+    {
+      "lat": -2.502277,
+      "lng": -44.3145119,
+      "tags": {
+        "addr:street": "Rua das Dálias",
+        "name": "Ilê Saint Louis"
+      },
+      "type": "way",
+      "id": 1159577117
+    },
+    {
+      "lat": -2.5044341,
+      "lng": -44.3175466,
+      "tags": {
+        "name": "Memorial Bandeira Tribuzi"
+      },
+      "type": "way",
+      "id": 1160221366
+    },
+    {
+      "lat": -2.4995942,
+      "lng": -44.3120861,
+      "tags": {
+        "name": "Champs Mall"
+      },
+      "type": "way",
+      "id": 1160221370
+    },
+    {
+      "lat": -2.5012313,
+      "lng": -44.2862095,
+      "tags": {
+        "name": "Via Manhattan Center III"
+      },
+      "type": "way",
+      "id": 1163244610
+    },
+    {
+      "lat": -2.4901008,
+      "lng": -44.2968103,
+      "tags": {
+        "name": "Drogasil"
+      },
+      "type": "way",
+      "id": 1179637781
+    },
+    {
+      "lat": -2.4895294,
+      "lng": -44.2973717,
+      "tags": {
+        "name": "Condomínio Toscana"
+      },
+      "type": "way",
+      "id": 1179637783
+    },
+    {
+      "lat": -2.4919483,
+      "lng": -44.3039889,
+      "tags": {
+        "addr:housenumber": "Qd. 23, Lote 1",
+        "addr:street": "Avenida dos Holandeses",
+        "name": "Residencial D’Algarve"
+      },
+      "type": "way",
+      "id": 1180007007
+    },
+    {
+      "lat": -2.5003038,
+      "lng": -44.3111057,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Avenida Doutor Jackson Kepler Lago",
+        "name": "Milazzo Contemporâneo"
+      },
+      "type": "way",
+      "id": 1184891630
+    },
+    {
+      "lat": -2.499986,
+      "lng": -44.3112017,
+      "tags": {
+        "name": "La Ville Mall"
+      },
+      "type": "way",
+      "id": 1184891632
+    },
+    {
+      "lat": -2.5007676,
+      "lng": -44.3118415,
+      "tags": {
+        "name": "Drogaria Globo"
+      },
+      "type": "way",
+      "id": 1184891635
+    },
+    {
+      "lat": -2.5012003,
+      "lng": -44.3116012,
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:street": "Rua das Hortências",
+        "name": "Petland"
+      },
+      "type": "way",
+      "id": 1184891647
+    },
+    {
+      "lat": -2.4922354,
+      "lng": -44.303553,
+      "tags": {
+        "name": "Residencial Évora"
+      },
+      "type": "way",
+      "id": 1201411624
+    },
+    {
+      "lat": -2.5038105,
+      "lng": -44.3090576,
+      "tags": {
+        "name": "U. E. B. Criança Feliz"
+      },
+      "type": "way",
+      "id": 1219337064
+    },
+    {
+      "lat": -2.4936781,
+      "lng": -44.2857497,
+      "tags": {
+        "name": "Cadami"
+      },
+      "type": "way",
+      "id": 1228108180
+    },
+    {
+      "lat": -2.4927523,
+      "lng": -44.2863921,
+      "tags": {
+        "name": "Smart Fit"
+      },
+      "type": "way",
+      "id": 1228108181
+    },
+    {
+      "lat": -2.4928618,
+      "lng": -44.2859768,
+      "tags": {
+        "name": "Edifício Century Multiempresarial"
+      },
+      "type": "way",
+      "id": 1228108182
+    },
+    {
+      "lat": -2.4937823,
+      "lng": -44.2853853,
+      "tags": {
+        "name": "Fecomércio / SESC / SENAC"
+      },
+      "type": "way",
+      "id": 1228108183
+    },
+    {
+      "lat": -2.492637,
+      "lng": -44.2868101,
+      "tags": {
+        "name": "Millenium Corporate Tower"
+      },
+      "type": "way",
+      "id": 1228108184
+    },
+    {
+      "lat": -2.4923332,
+      "lng": -44.2868512,
+      "tags": {
+        "name": "Edifício Arpoador"
+      },
+      "type": "way",
+      "id": 1228108185
+    },
+    {
+      "lat": -2.5017932,
+      "lng": -44.2894806,
+      "tags": {
+        "name": "McDonald's"
+      },
+      "type": "way",
+      "id": 1229485012
+    },
+    {
+      "lat": -2.4956373,
+      "lng": -44.2877314,
+      "tags": {
+        "name": "Igreja de São Paulo Apóstulo"
+      },
+      "type": "way",
+      "id": 1272624008
+    },
+    {
+      "lat": -2.4938729,
+      "lng": -44.2870176,
+      "tags": {
+        "name": "Edifício Portofino"
+      },
+      "type": "way",
+      "id": 1272624009
+    },
+    {
+      "lat": -2.492868,
+      "lng": -44.2843698,
+      "tags": {
+        "name": "Cassi"
+      },
+      "type": "way",
+      "id": 1272624030
+    },
+    {
+      "lat": -2.4928345,
+      "lng": -44.2848671,
+      "tags": {
+        "name": "Drogasil"
+      },
+      "type": "way",
+      "id": 1272624031
+    },
+    {
+      "lat": -2.4928575,
+      "lng": -44.2845611,
+      "tags": {
+        "name": "Wizard"
+      },
+      "type": "way",
+      "id": 1272624032
+    },
+    {
+      "lat": -2.4928685,
+      "lng": -44.2839228,
+      "tags": {
+        "name": "Banco do Brasil"
+      },
+      "type": "way",
+      "id": 1272624034
+    },
+    {
+      "lat": -2.4941306,
+      "lng": -44.280465,
+      "tags": {
+        "name": "Centro Empresarial Vinicius de Moraes"
+      },
+      "type": "way",
+      "id": 1273551760
+    },
+    {
+      "lat": -2.4938182,
+      "lng": -44.2805445,
+      "tags": {
+        "name": "Edifício Tom Jobim"
+      },
+      "type": "way",
+      "id": 1273551761
+    },
+    {
+      "lat": -2.4938043,
+      "lng": -44.2814294,
+      "tags": {
+        "name": "Edifício Studio Design"
+      },
+      "type": "way",
+      "id": 1273551762
+    },
+    {
+      "lat": -2.4930119,
+      "lng": -44.282595,
+      "tags": {
+        "name": "Espaço Fátima Lima"
+      },
+      "type": "way",
+      "id": 1273551763
+    },
+    {
+      "lat": -2.4930723,
+      "lng": -44.282248,
+      "tags": {
+        "name": "Pague Menos"
+      },
+      "type": "way",
+      "id": 1273551764
+    },
+    {
+      "lat": -2.4931094,
+      "lng": -44.2820656,
+      "tags": {
+        "name": "Plastik"
+      },
+      "type": "way",
+      "id": 1273551765
+    },
+    {
+      "lat": -2.4925439,
+      "lng": -44.2840091,
+      "tags": {
+        "name": "Edifício Punta Del Este"
+      },
+      "type": "way",
+      "id": 1273551768
+    },
+    {
+      "lat": -2.4925207,
+      "lng": -44.2847098,
+      "tags": {
+        "name": "Edifício Residence Garden"
+      },
+      "type": "way",
+      "id": 1273551769
+    },
+    {
+      "lat": -2.4924525,
+      "lng": -44.2856723,
+      "tags": {
+        "name": "Edifício Renoir"
+      },
+      "type": "way",
+      "id": 1273551770
+    },
+    {
+      "lat": -2.4918545,
+      "lng": -44.283664,
+      "tags": {
+        "name": "Edifício Turquesa"
+      },
+      "type": "way",
+      "id": 1273551771
+    },
+    {
+      "lat": -2.4916161,
+      "lng": -44.2842114,
+      "tags": {
+        "name": "Edifício Buenos Aires"
+      },
+      "type": "way",
+      "id": 1273551772
+    },
+    {
+      "lat": -2.4915797,
+      "lng": -44.2824984,
+      "tags": {
+        "name": "Costa Atlântico Hotel"
+      },
+      "type": "way",
+      "id": 1273551773
+    },
+    {
+      "lat": -2.4912419,
+      "lng": -44.2837082,
+      "tags": {
+        "name": "Edifício Turim"
+      },
+      "type": "way",
+      "id": 1273551774
+    },
+    {
+      "lat": -2.490946,
+      "lng": -44.2837288,
+      "tags": {
+        "name": "Edifício Don Gabriel"
+      },
+      "type": "way",
+      "id": 1273551775
+    },
+    {
+      "lat": -2.4909005,
+      "lng": -44.2841628,
+      "tags": {
+        "name": "Edifício Bérgamo"
+      },
+      "type": "way",
+      "id": 1273551776
+    },
+    {
+      "lat": -2.4908936,
+      "lng": -44.2844561,
+      "tags": {
+        "name": "Edifício Cidade do Porto"
+      },
+      "type": "way",
+      "id": 1273551777
+    },
+    {
+      "lat": -2.4908619,
+      "lng": -44.2847242,
+      "tags": {
+        "name": "Edifício Lazuli"
+      },
+      "type": "way",
+      "id": 1273551778
+    },
+    {
+      "lat": -2.4973407,
+      "lng": -44.2856379,
+      "tags": {
+        "name": "Maple Bear - Educação Infantil"
+      },
+      "type": "way",
+      "id": 1279776462
+    },
+    {
+      "lat": -2.4930994,
+      "lng": -44.2803144,
+      "tags": {
+        "name": "Quartetto Bar"
+      },
+      "type": "way",
+      "id": 1281884788
+    },
+    {
+      "lat": -2.4931466,
+      "lng": -44.2799424,
+      "tags": {
+        "name": "Mestre da Obra Locação de Equipamentos"
+      },
+      "type": "way",
+      "id": 1281884790
+    },
+    {
+      "lat": -2.4929881,
+      "lng": -44.2795427,
+      "tags": {
+        "name": "Martelinho de Ouro Calhau"
+      },
+      "type": "way",
+      "id": 1281884791
+    },
+    {
+      "lat": -2.493277,
+      "lng": -44.2781789,
+      "tags": {
+        "name": "Inove Piscinas São Luís"
+      },
+      "type": "way",
+      "id": 1281884796
+    },
+    {
+      "lat": -2.4916591,
+      "lng": -44.2789305,
+      "tags": {
+        "name": "Jasmin Hospital Dia"
+      },
+      "type": "way",
+      "id": 1281884798
+    },
+    {
+      "lat": -2.4915565,
+      "lng": -44.2812477,
+      "tags": {
+        "name": "Centro de Criação Arquitetura e Cia"
+      },
+      "type": "way",
+      "id": 1281884800
+    },
+    {
+      "lat": -2.4915057,
+      "lng": -44.2814138,
+      "tags": {
+        "name": "La Carniceria"
+      },
+      "type": "way",
+      "id": 1281884801
+    },
+    {
+      "lat": -2.4914652,
+      "lng": -44.2808878,
+      "tags": {
+        "name": "CAV Adega"
+      },
+      "type": "way",
+      "id": 1281884802
+    },
+    {
+      "lat": -2.4931663,
+      "lng": -44.2809798,
+      "tags": {
+        "name": "Dot Beauty"
+      },
+      "type": "way",
+      "id": 1281884803
+    },
+    {
+      "lat": -2.4908577,
+      "lng": -44.2916944,
+      "tags": {
+        "addr:street": "Rua Parnaíba",
+        "name": "Vivendas Ponta do Farol"
+      },
+      "type": "way",
+      "id": 1285583346
+    },
+    {
+      "lat": -2.4922764,
+      "lng": -44.2922816,
+      "tags": {
+        "name": "Maison Renoir"
+      },
+      "type": "way",
+      "id": 1285583347
+    },
+    {
+      "lat": -2.4923504,
+      "lng": -44.2919781,
+      "tags": {
+        "name": "Porto Ravena"
+      },
+      "type": "way",
+      "id": 1285583348
+    },
+    {
+      "lat": -2.4919432,
+      "lng": -44.2920575,
+      "tags": {
+        "name": "Edifício Maison Monet"
+      },
+      "type": "way",
+      "id": 1285583349
+    },
+    {
+      "lat": -2.4910383,
+      "lng": -44.2924657,
+      "tags": {
+        "name": "Varandas de São Marcos"
+      },
+      "type": "way",
+      "id": 1285583350
+    },
+    {
+      "lat": -2.5087041,
+      "lng": -44.3038033,
+      "tags": {
+        "name": "Mix Pinheiro"
+      },
+      "type": "way",
+      "id": 1288755170
+    },
+    {
+      "lat": -2.4966753,
+      "lng": -44.2855255,
+      "tags": {
+        "name": "Maple Bear"
+      },
+      "type": "way",
+      "id": 1289420797
+    },
+    {
+      "lat": -2.5063072,
+      "lng": -44.29649,
+      "tags": {
+        "name": "Clínica São Marcos"
+      },
+      "type": "way",
+      "id": 1293278554
+    },
+    {
+      "lat": -2.5050727,
+      "lng": -44.2951044,
+      "tags": {
+        "name": "Laboratório Cedro"
+      },
+      "type": "way",
+      "id": 1293278556
+    },
+    {
+      "lat": -2.5011654,
+      "lng": -44.3123022,
+      "tags": {
+        "name": "Arena Estação Beach"
+      },
+      "type": "way",
+      "id": 1303991730
+    },
+    {
+      "lat": -2.4994361,
+      "lng": -44.3110437,
+      "tags": {
+        "name": "Edifício Jardins de Bordeaux"
+      },
+      "type": "way",
+      "id": 1308484640
+    },
+    {
+      "lat": -2.4984502,
+      "lng": -44.3085734,
+      "tags": {
+        "name": "Edifício Ocean Tower"
+      },
+      "type": "way",
+      "id": 1309970468
+    },
+    {
+      "lat": -2.4977139,
+      "lng": -44.308705,
+      "tags": {
+        "name": "Edifício Côte D'Azur"
+      },
+      "type": "way",
+      "id": 1309970469
+    },
+    {
+      "lat": -2.4979967,
+      "lng": -44.3090277,
+      "tags": {
+        "name": "Edifício Murano"
+      },
+      "type": "way",
+      "id": 1309970470
+    },
+    {
+      "lat": -2.5001638,
+      "lng": -44.309912,
+      "tags": {
+        "name": "Edifício Nazeu Quadros"
+      },
+      "type": "way",
+      "id": 1309970472
+    },
+    {
+      "lat": -2.5003601,
+      "lng": -44.3102269,
+      "tags": {
+        "name": "Edifício Monte Carlo"
+      },
+      "type": "way",
+      "id": 1309970473
+    },
+    {
+      "lat": -2.4998938,
+      "lng": -44.3117333,
+      "tags": {
+        "name": "Condomínio Península Way"
+      },
+      "type": "way",
+      "id": 1309970476
+    },
+    {
+      "lat": -2.5014139,
+      "lng": -44.3102433,
+      "tags": {
+        "name": "Aivia Clube Residence"
+      },
+      "type": "way",
+      "id": 1309970478
+    },
+    {
+      "lat": -2.5009315,
+      "lng": -44.3109308,
+      "tags": {
+        "name": "Nautic Residence"
+      },
+      "type": "way",
+      "id": 1309970479
+    },
+    {
+      "lat": -2.5010811,
+      "lng": -44.3112406,
+      "tags": {
+        "name": "Edifício Península Square"
+      },
+      "type": "way",
+      "id": 1309970480
+    },
+    {
+      "lat": -2.4963996,
+      "lng": -44.3070254,
+      "tags": {
+        "name": "Edifício Ari Oliveira"
+      },
+      "type": "way",
+      "id": 1311064898
+    },
+    {
+      "lat": -2.4961813,
+      "lng": -44.3068498,
+      "tags": {
+        "name": "Edifício Mirage Residence"
+      },
+      "type": "way",
+      "id": 1311064899
+    },
+    {
+      "lat": -2.4959947,
+      "lng": -44.3067099,
+      "tags": {
+        "name": "Edifício Parco Laguna"
+      },
+      "type": "way",
+      "id": 1311064900
+    },
+    {
+      "lat": -2.4957232,
+      "lng": -44.306451,
+      "tags": {
+        "name": "Edifício Acqua Bella"
+      },
+      "type": "way",
+      "id": 1311064901
+    },
+    {
+      "lat": -2.4954191,
+      "lng": -44.3062537,
+      "tags": {
+        "name": "Edifício Mangata"
+      },
+      "type": "way",
+      "id": 1311064902
+    },
+    {
+      "lat": -2.5003871,
+      "lng": -44.2915666,
+      "tags": {
+        "name": "7º Juizado Especial Cível e das Relações de Consumo"
+      },
+      "type": "way",
+      "id": 1328834036
+    },
+    {
+      "lat": -2.5000648,
+      "lng": -44.2917552,
+      "tags": {
+        "addr:housenumber": "23",
+        "addr:street": "Rua das Gaivotas",
+        "name": "SLZ Business"
+      },
+      "type": "way",
+      "id": 1328834037
+    },
+    {
+      "lat": -2.49982,
+      "lng": -44.2901313,
+      "tags": {
+        "name": "Viva Água"
+      },
+      "type": "way",
+      "id": 1338967402
+    },
+    {
+      "lat": -2.489702,
+      "lng": -44.3018385,
+      "tags": {
+        "name": "CliniCASSI"
+      },
+      "type": "way",
+      "id": 1338967403
+    },
+    {
+      "lat": -2.491655,
+      "lng": -44.3008806,
+      "tags": {
+        "name": "Edifício Solarium"
+      },
+      "type": "way",
+      "id": 1338967404
+    },
+    {
+      "lat": -2.5074642,
+      "lng": -44.2842005,
+      "tags": {
+        "name": "OftalmoCentro"
+      },
+      "type": "way",
+      "id": 1367194735
+    },
+    {
+      "lat": -2.5022955,
+      "lng": -44.2833885,
+      "tags": {
+        "name": "Conselho Regional de Medicina"
+      },
+      "type": "way",
+      "id": 1378739238
+    },
+    {
+      "lat": -2.4914811,
+      "lng": -44.2830171,
+      "tags": {
+        "name": "California Sport Mall"
+      },
+      "type": "way",
+      "id": 1447597049
+    },
+    {
+      "lat": -2.5022436,
+      "lng": -44.2865576,
+      "tags": {
+        "name": "Pague Menos"
+      },
+      "type": "way",
+      "id": 1456611176
+    },
+    {
+      "lat": -2.5043386,
+      "lng": -44.2932881,
+      "tags": {
+        "name": "Drogasil"
+      },
+      "type": "way",
+      "id": 1456611183
+    },
+    {
+      "lat": -2.4905326,
+      "lng": -44.3020566,
+      "tags": {
+        "name": "Pague Menos"
+      },
+      "type": "way",
+      "id": 1459145587
+    },
+    {
+      "lat": -2.5052824,
+      "lng": -44.3130704,
+      "tags": {
+        "name": "Pier Massari"
+      },
+      "type": "way",
+      "id": 1488722160
+    },
+    {
+      "lat": -2.5011769,
+      "lng": -44.2875004,
+      "tags": {
+        "name": "Tropical Shopping"
+      },
+      "type": "relation",
+      "id": 7639047
+    },
+    {
+      "lat": -2.5011914,
+      "lng": -44.2838501,
+      "tags": {
+        "name": "DLEi Empreendimentos"
+      },
+      "type": "relation",
+      "id": 12554149
+    },
+    {
+      "lat": -2.4927377,
+      "lng": -44.2835604,
+      "tags": {
+        "name": "Edifício Al Mare"
+      },
+      "type": "relation",
+      "id": 17485084
+    },
+    {
+      "lat": -2.4985572,
+      "lng": -44.2833222,
+      "tags": {
+        "addr:street": "Avenida Coronel Colares Moreira",
+        "name": "Marcus Center"
+      },
+      "type": "relation",
+      "id": 17597663
+    },
+    {
+      "lat": -2.4913165,
+      "lng": -44.3053233,
+      "tags": {
+        "addr:housenumber": "12",
+        "addr:street": "Av. São Marcos",
+        "name": "Brisamar Hotel"
+      },
+      "type": "relation",
+      "id": 17637644
+    },
+    {
+      "lat": -2.4904767,
+      "lng": -44.3043309,
+      "tags": {
+        "name": "Rio Poty Hotel"
+      },
+      "type": "relation",
+      "id": 17637645
+    }
+  ]
+}

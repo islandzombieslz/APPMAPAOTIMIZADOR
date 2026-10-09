@@ -1,4 +1,4 @@
-# Rotas Shopee — Mapa V19
+# Rotas Shopee — Mapa V20
 
 Aplicativo para importar uma planilha de entregas e reconhecer os prédios usando coordenadas permanentes incorporadas. Abra `index.html` ou o endereço do GitHub Pages após a publicação.
 
@@ -57,3 +57,5 @@ Na V17, marcadores sem alterações são reaproveitados, os grupos e endereços 
 Na V18, o mapa e a camada de imagens têm limites na região atendida, zoom mínimo 13 e buffer de um bloco. O zoom 19 reutiliza imagens do nível 18. Marcadores fora da tela (com margem de 20%) deixam de ser renderizados e voltam ao terminar o movimento. Os quadrados usam 19 pixels, selo de 12 pixels e sombra reduzida. Arrasto com desaceleração 1200 e zoom em passos de 0,25 dão mais continuidade aos gestos. As requisições de imagens são limitadas pelo retângulo da região; uma máscara simples oculta os trechos fora do polígono operacional. Blocos de imagem são indivisíveis e os blocos de borda contêm dados de áreas vizinhas, mas essas áreas ficam ocultas.
 
 Na V19, a área visual ganha cerca de 2,2 km de margem ao redor do retângulo atendido, sem máscara de corte. O zoom mínimo passa a 12 e a resistência nas bordas diminui. O filtro geográfico das entregas continua no mesmo polígono operacional, independente da área visível. As melhorias de renderização da V18 são mantidas.
+
+V20: marcadores redondos amarelos com borda branca, haste e base; quantidade em selo verde de 10 px. Mais 39 registros cartográficos com coordenadas, total 251 registros / 179 coordenadas (163 na área). Inclui 345 objetos nomeados do extrato OpenStreetMap de 31/05/2026, com atualização regional em segundo plano. Busca também nomes de lojas, nomes alternativos e endereços nomeados, normaliza prefixos e recusa homônimos distantes sem contexto. Coordenadas de centros cartográficos não garantem a posição da portaria.

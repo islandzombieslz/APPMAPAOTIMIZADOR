@@ -3,7 +3,7 @@ const html=fs.readFileSync(require('path').join(__dirname,'../index.html'),'utf8
 const source=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
 const els=new Map(),storage=new Map();const element=()=>({style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},appendChild(){},insertAdjacentHTML(){},setAttribute(){},value:''});
 const ctx={console,setTimeout(){},clearTimeout(){},window:{addEventListener(){}},navigator:{},document:{getElementById(id){if(!els.has(id))els.set(id,element());return els.get(id)},createElement:element},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},AbortController,URL,Blob,confirm:()=>true};
-vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,GEO_SEED,geoDb,inRegion,selectOSM,markerOffset,locationParts,permanentCoordinate,applyPermanentCatalog,groups,routeStop,gps,importFile,draw,save,rasterMap,generateCpfMA,cpfAction,getCpfState:()=>cpfState,setData:x=>data=x,setMap:x=>map=x};`,ctx);
+vm.createContext(ctx);vm.runInContext(source+`;globalThis.api={BUILDING_DB,OSM_PLACES,marker,catalogMatches,GEO_SEED,geoDb,inRegion,selectOSM,markerOffset,locationParts,permanentCoordinate,applyPermanentCatalog,groups,routeStop,gps,importFile,draw,save,rasterMap,generateCpfMA,cpfAction,getCpfState:()=>cpfState,setData:x=>data=x,setMap:x=>map=x};`,ctx);
 const a=ctx.api;assert(a.BUILDING_DB.length>=192);assert(Object.keys(a.GEO_SEED).length>=122);
 const executive=a.BUILDING_DB.find(b=>b.nome==='Executive Center'||b.nome==='Edifício Executive Center');assert(executive);
 const row={address:executive.logradouro+', '+executive.numero+', Edifício Executive Center, apto 101',lat:-2.51,lng:-44.30,source:'shopee',stop:'1',id:'test1'};
@@ -72,5 +72,20 @@ for(const x of [0,7,"007","12A"])assert.equal(a.routeStop(x),String(x));assert.e
  const raster={setView(){return this},on(){return this},getBounds:()=>view,getZoom:()=>14};
  ctx.window.L=ctx.L;ctx.L.map=(id,opts)=>{config=opts;return raster};ctx.L.tileLayer=(url,opts)=>{tiles=opts;return {addTo(){}}};ctx.L.polygon=(rings,opts)=>{mask={rings,opts};return {addTo(){}}};a.rasterMap();
  assert.equal(config.minZoom,12);assert.equal(config.zoomSnap,.25);assert.equal(config.inertiaDeceleration,1200);assert.equal(tiles.maxNativeZoom,18);assert.equal(tiles.keepBuffer,1);assert.equal(tiles.noWrap,true);assert.deepEqual(JSON.parse(JSON.stringify(tiles.bounds)),[[-2.531,-44.34],[-2.465,-44.258]]);assert.equal(mask,undefined);assert.equal(config.maxBoundsViscosity,.4);
- assert(html.includes('.pin{width:19px!important'));console.log('PASS: área visual ampliada sem máscara, zoom suave e marcadores fora da tela sem alterar entregas.');
+ assert(html.includes('.pin{width:22px!important'));console.log('PASS: área visual ampliada sem máscara, zoom suave e marcadores fora da tela sem alterar entregas.');
 })().catch(e=>{console.error(e);process.exitCode=1});
+
+// Nomes publicados com prefixos diferentes devem reconhecer o mesmo objeto.
+const mapped={lat:-2.499,lng:-44.29,tags:{name:'Condomínio Edifício Maison Teste'}};
+const g={p:{building:'Maison Teste',buildingKey:'maison teste',street:'',roadKey:'',district:'Renascença'}};
+assert(a.selectOSM(g,[mapped]));
+assert.equal(a.selectOSM(g,[mapped,{...mapped,lng:-44.285}]),null);
+const point=a.OSM_PLACES.find(o=>o.tags.name==='Espaço Renascença');assert(point);
+const parsed=a.locationParts({address:'Espaço Renascença, sala 1, Jardim Renascença'});assert.equal(parsed.building,'Espaço Renascença');
+assert(a.selectOSM({p:parsed},a.OSM_PLACES));
+for(const b of a.BUILDING_DB.filter(b=>Number(b.id.slice(4))>212)){
+ const r={address:b.nome+', apto 101',source:'shopee'};assert.equal(a.applyPermanentCatalog([r]),1,b.nome);assert.equal(r.lat,b.lat);
+}
+const pin=a.marker({stop:'007',items:[{source:'shopee'}],p:{}},3);assert(pin.innerHTML.includes('007'));assert(pin.innerHTML.includes('class="count">3'));
+assert(html.includes('background:#20a65a'));assert(html.includes('.pin::before'));assert(html.includes('border-radius:50%!important'));
+console.log('PASS: prefixos normalizados, homônimos recusados, local sem prefixo, novos registros e marcador com pacotes.');
